@@ -21,11 +21,11 @@ Discussion points:
 * Required Resources:
 
     PyGame lessons videos and articles along with the PyGame documents
-    
+
 * First task/Mileston:
 
     Build the graphical interface with notes on the screen
 
-Goals for next week (include responsibilities)
+Goals for next week 
 
 * Everyone will have an understanding of how PyGame works and have PyGame installed
