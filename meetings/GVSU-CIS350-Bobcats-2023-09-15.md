@@ -11,12 +11,19 @@ Time: 1:30 pm -> 1:50 pm
 Discussion points: 
 
 * Term Project Idea: 
+
     2D guitar hero game
-* Required Technologies
+
+* Required Technologies:
+
     Python, PyGame, a way to import music, a way to import game graphics
-* Required Resources
+
+* Required Resources:
+
     PyGame lessons videos and articles along with the PyGame documents
-* First task/Mileston
+    
+* First task/Mileston:
+
     Build the graphical interface with notes on the screen
 
 Goals for next week (include responsibilities)
