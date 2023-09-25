@@ -22,7 +22,7 @@ Discussion points:
 
     Made sure everyone had python installed and could use python inside visual studio code. Trouble shooted problems with installing pygame which included adding python to the path in enviromental variables.
 
-Goals for next week (include responsibilities)
+Goals for next week 
 
 * Finish project proposal (everyone)
 
