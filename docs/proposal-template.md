@@ -9,7 +9,7 @@ Team members: James McKevitt, Jack Bohannon, Parker Bernreuter, Kyle Scott
 # Anticipated Technologies
 
 In preperation for starting our project, we have determined some technologies that we are anticipating needing.
-
+    
 * Python
 * PyGame
 * A Python library for playing music
