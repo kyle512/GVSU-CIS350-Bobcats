@@ -50,8 +50,14 @@ We have layed out a plan for developing this project that involves going about t
 
 # Estimated Timeline
 
-(Figure out what your major milestones for this project will be, including how long you anticipate it *may* take to reach that point)
+* Study and practice with pyGame (2 weeks, mid October)
+* Create GUI with notes that scroll across the screen, key inputs for hitting notes, score tracker, song selection, etc. (3-4 weeks, end of October)
+* Upload music and sync with the notes on screen (2 weeks, mid-November)
+* Debugging and finish testing (2 weeks, end of November)
+* Presentation (December)
 
 # Anticipated Problems
 
 (Describe any problems you foresee that you will need to overcome)
+* We are not very proficient with pyGame, this will take some studying/practice to get the hang of creating a working GUI with appropriate key inputs
+* Syncing music with the notes on the screen requires precise timing to get the result we want. Anticipating a lot of trial and error
