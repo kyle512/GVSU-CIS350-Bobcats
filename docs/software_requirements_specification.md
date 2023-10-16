@@ -5,8 +5,9 @@ The purpose of this document is to outline the functional and non-functional req
 # Functional Requirements
 
 1. Main Menu
-    1. Clicking the ‘Play’ button shall display a menu of available songs to play. 
-    2. Clicking the 'Quit' button shall exit the game.
+    1. Clicking the ‘Play’ button shall display a menu of available songs to play.
+    2. Clicking the 'Settings" button shall display a settings menu. 
+    3. Clicking the 'Quit' button shall exit the game.
 
 2. Song Selection
     1. Clicking a song shall display a fret board and proceed to show the appropriate notes for the selected song.
@@ -20,6 +21,9 @@ The purpose of this document is to outline the functional and non-functional req
 
 1. Main Menu
     1. The background of every screen shall change depending on what menu the user is in.
+    2. The main menu shall provide clear feedback visually or audibly.
+    3. The main menu shall be intuitive and user friendly.
+    4. The main menu shall load within 5 seconds of the game starting.
 
 2. Song Selection
     1. The system shall load in the selected song quickly.
