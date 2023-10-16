@@ -25,7 +25,7 @@ Discussion points:
     Talked about what we wanted to have done for the presentation and what we could showcase for our progress. Talked about what we could use
     to create diagrams. 
 
-Goals for next week 
+Goals for next week //
 
 * Finish hw3 
 
