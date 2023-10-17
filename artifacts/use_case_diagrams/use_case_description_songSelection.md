@@ -1,6 +1,5 @@
 #Use Case Description from Song_selection_use_case
 
-<
 Use Case: Select Song
 
 Actors: User (initiator), Game Server
@@ -10,4 +9,3 @@ Description: The user will select a song to play along with from the song select
 Cross Reference: Requirements 2.1 and 2.2
 
 Use-Cases: No prior use-cases will need to be completed.
->
