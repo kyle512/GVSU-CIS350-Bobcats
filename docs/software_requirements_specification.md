@@ -8,14 +8,17 @@ The purpose of this document is to outline the functional and non-functional req
     1. Clicking the ‘Play’ button shall display a menu of available songs to play.
     2. Clicking the 'Settings" button shall display a settings menu. 
     3. Clicking the 'Quit' button shall exit the game.
+    4. Clicking the 'Settings' button shall allow users to customize audio volume and visual effects.
 
 2. Song Selection
     1. Clicking a song shall display a fret board and proceed to show the appropriate notes for the selected song.
     2. User shall be able to choose from a selection of songs to play along with.
+    3. Users shall have the ability to preview a selected song before starting gameplay.
 
 3. Game Play
     1. Points shall be awarded if a key input is read as the note crosses the end of the fret board.
     2. Playing incorrect notes shall hurt the user's score.
+    3. When the player consecutively hits a series of corrent notes. A multiplier shall be applied to their score.
 
 # Nonfunctional Requirements
 
@@ -28,8 +31,10 @@ The purpose of this document is to outline the functional and non-functional req
 2. Song Selection
     1. The system shall load in the selected song quickly.
     2. The system shall be able to add new songs into the game easily.
+    3. All song names shall be displayed for the player to see.
 
 3. Game Play
     1. The game and its inputs shall play the same on any OS.
     2. Notes on the fret board shall line up according to the beat of the current song.
     3. The controls shall be easy to understand for all users.
+    4. The game should have little to no audio latency for a better user experience.
