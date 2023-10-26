@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbvym3dbtqnn8"]
+
+[ext_resource type="Texture2D" uid="uid://brpeogie4qrdt" path="res://Images/fretBoard.png" id="1_rfijf"]
+
+[node name="game" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(583, 324)
+scale = Vector2(3.25, 5.4)
+texture = ExtResource("1_rfijf")
