@@ -17,9 +17,16 @@ scale = Vector2(0.998178, 1.00007)
 script = ExtResource("1_hkhgm")
 
 [node name="selectionBack" type="Sprite2D" parent="."]
-position = Vector2(577.25, 322.25)
+position = Vector2(576.049, 331.977)
 scale = Vector2(3.15479, 2.48084)
 texture = ExtResource("1_1jry3")
+
+[node name="Button" type="Button" parent="selectionBack"]
+offset_left = -167.0
+offset_top = -115.0
+offset_right = -100.0
+offset_bottom = -90.0
+text = "BACK"
 
 [node name="rockAndRollAllNight" type="Button" parent="."]
 offset_left = 492.0
@@ -30,4 +37,5 @@ scale = Vector2(0.99912, 1)
 text = "Rock and Roll All Night"
 script = SubResource("GDScript_w5ur8")
 
+[connection signal="pressed" from="selectionBack/Button" to="." method="_on_back"]
 [connection signal="pressed" from="rockAndRollAllNight" to="." method="_on_rock_all_night_pressed"]

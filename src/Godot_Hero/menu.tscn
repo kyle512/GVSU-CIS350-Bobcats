@@ -4,26 +4,31 @@
 [ext_resource type="Texture2D" uid="uid://bycg5281jj2qn" path="res://Images/loading screen.png" id="2_hmmag"]
 
 [node name="Menu" type="Node2D"]
+position = Vector2(-2, 5)
 script = ExtResource("1_gxnje")
 
 [node name="menuBack" type="Sprite2D" parent="."]
-position = Vector2(574.75, 324)
-scale = Vector2(0.599219, 0.598148)
+position = Vector2(578, 330)
+scale = Vector2(0.602908, 0.606481)
 texture = ExtResource("2_hmmag")
 
 [node name="Play" type="Button" parent="."]
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 326.0
-offset_bottom = 61.0
+offset_left = 434.0
+offset_top = 211.0
+offset_right = 759.0
+offset_bottom = 270.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 text = "PLAY
 "
 
 [node name="Quit" type="Button" parent="."]
-offset_left = -1.0
-offset_top = 64.0
-offset_right = 326.0
-offset_bottom = 113.0
+offset_left = 434.0
+offset_top = 294.0
+offset_right = 761.0
+offset_bottom = 343.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 text = "QUIT"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
