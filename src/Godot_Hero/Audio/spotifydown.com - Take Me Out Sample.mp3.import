@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6yxqcm0urkbe"
+path="res://.godot/imported/spotifydown.com - Take Me Out Sample.mp3-13c938fef34c0dc3372e4540648b8227.mp3str"
+
+[deps]
+
+source_file="res://Audio/spotifydown.com - Take Me Out Sample.mp3"
+dest_files=["res://.godot/imported/spotifydown.com - Take Me Out Sample.mp3-13c938fef34c0dc3372e4540648b8227.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

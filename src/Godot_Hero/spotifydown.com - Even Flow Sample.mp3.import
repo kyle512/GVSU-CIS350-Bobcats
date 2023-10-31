@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clj7pjsx8vww7"
+path="res://.godot/imported/spotifydown.com - Even Flow Sample.mp3-3cc86c35277aadec13d954dd31494aa2.mp3str"
+
+[deps]
+
+source_file="res://spotifydown.com - Even Flow Sample.mp3"
+dest_files=["res://.godot/imported/spotifydown.com - Even Flow Sample.mp3-3cc86c35277aadec13d954dd31494aa2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

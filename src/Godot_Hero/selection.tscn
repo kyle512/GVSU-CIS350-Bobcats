@@ -1,16 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://qqgbix8tac70"]
+[gd_scene load_steps=6 format=3 uid="uid://qqgbix8tac70"]
 
 [ext_resource type="Texture2D" uid="uid://cuff1ae4krm6m" path="res://Images/background1.jpg" id="1_1jry3"]
 [ext_resource type="Script" path="res://selection.gd" id="1_hkhgm"]
-
-[sub_resource type="GDScript" id="GDScript_w5ur8"]
-script/source = "extends Button
-
-
-# Called when the node enters the scene tree for the first time.
-func on_rock_all_night_pressed():
-	get_tree().change_scene_to_file(\"res://game.tscn\")
-"
+[ext_resource type="AudioStream" uid="uid://cm6e17m8qkuq7" path="res://Audio/spotifydown.com - Rock And Roll All Nite Sample.mp3" id="4_da0dc"]
+[ext_resource type="AudioStream" uid="uid://dgk33euo7n6h1" path="res://Audio/spotifydown.com - Even Flow Sample.mp3" id="5_43ryy"]
+[ext_resource type="AudioStream" uid="uid://b6yxqcm0urkbe" path="res://Audio/spotifydown.com - Take Me Out Sample.mp3" id="6_0efxr"]
 
 [node name="selection" type="Node2D"]
 scale = Vector2(0.998178, 1.00007)
@@ -21,21 +15,60 @@ position = Vector2(576.049, 331.977)
 scale = Vector2(3.15479, 2.48084)
 texture = ExtResource("1_1jry3")
 
-[node name="Button" type="Button" parent="selectionBack"]
+[node name="back" type="Button" parent="selectionBack"]
 offset_left = -167.0
 offset_top = -115.0
 offset_right = -100.0
 offset_bottom = -90.0
 text = "BACK"
 
-[node name="rockAndRollAllNight" type="Button" parent="."]
-offset_left = 492.0
-offset_top = 126.0
-offset_right = 674.0
-offset_bottom = 157.0
+[node name="rockAndRollAllNite" type="Button" parent="."]
+offset_left = 361.0
+offset_top = 123.0
+offset_right = 789.0
+offset_bottom = 208.0
 scale = Vector2(0.99912, 1)
-text = "Rock and Roll All Night"
-script = SubResource("GDScript_w5ur8")
+text = "Rock and Roll All Nite
+Kiss - Dressed to Kill - 1975"
 
-[connection signal="pressed" from="selectionBack/Button" to="." method="_on_back"]
-[connection signal="pressed" from="rockAndRollAllNight" to="." method="_on_rock_all_night_pressed"]
+[node name="evenFlow" type="Button" parent="."]
+offset_left = 362.0
+offset_top = 279.0
+offset_right = 792.0
+offset_bottom = 369.0
+text = "Even Flow
+Pearl Jam - Ten - 1991"
+
+[node name="takeMeOut" type="Button" parent="."]
+offset_left = 363.0
+offset_top = 436.0
+offset_right = 793.0
+offset_bottom = 529.0
+text = "Take Me Out
+Franz Ferdinand - Franz Ferdinand - 2004"
+
+[node name="rockAndRollAllNiteAudio" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(805.468, 134.991)
+stream = ExtResource("4_da0dc")
+volume_db = -10.0
+
+[node name="evenFlowAudio" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(806.469, 291.979)
+stream = ExtResource("5_43ryy")
+volume_db = -10.0
+
+[node name="takeMeOutAudio" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(807.471, 450.968)
+stream = ExtResource("6_0efxr")
+volume_db = -10.0
+
+[connection signal="pressed" from="selectionBack/back" to="." method="_on_back"]
+[connection signal="mouse_entered" from="rockAndRollAllNite" to="." method="_on_rock_and_roll_all_nite_mouse_entered"]
+[connection signal="mouse_exited" from="rockAndRollAllNite" to="." method="_on_rock_and_roll_all_nite_mouse_exited"]
+[connection signal="pressed" from="rockAndRollAllNite" to="." method="_on_rock_all_night_pressed"]
+[connection signal="mouse_entered" from="evenFlow" to="." method="_on_even_flow_mouse_entered"]
+[connection signal="mouse_exited" from="evenFlow" to="." method="_on_even_flow_mouse_exited"]
+[connection signal="pressed" from="evenFlow" to="." method="_on_even_flow_pressed"]
+[connection signal="mouse_entered" from="takeMeOut" to="." method="_on_take_me_out_mouse_entered"]
+[connection signal="mouse_exited" from="takeMeOut" to="." method="_on_take_me_out_mouse_exited"]
+[connection signal="pressed" from="takeMeOut" to="." method="_on_take_me_out_pressed"]

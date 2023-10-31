@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dboj3i80ltf03"
+path="res://.godot/imported/spotifydown.com - Rock And Roll All Nite Sample.mp3-b35eeab281fab5dea77bd5d3dd803741.mp3str"
+
+[deps]
+
+source_file="res://spotifydown.com - Rock And Roll All Nite Sample.mp3"
+dest_files=["res://.godot/imported/spotifydown.com - Rock And Roll All Nite Sample.mp3-b35eeab281fab5dea77bd5d3dd803741.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
