@@ -1,40 +1,106 @@
-[gd_scene load_steps=7 format=3 uid="uid://cbvym3dbtqnn8"]
+[gd_scene load_steps=22 format=3 uid="uid://cbvym3dbtqnn8"]
 
 [ext_resource type="Texture2D" uid="uid://brpeogie4qrdt" path="res://Images/fretBoard.png" id="1_rfijf"]
 [ext_resource type="Texture2D" uid="uid://dp87kqc5d3vm" path="res://Images/red_unpressed.png" id="2_f7or2"]
 [ext_resource type="Texture2D" uid="uid://d2bwqn1d8bjpu" path="res://Images/green_unpressed.png" id="2_ymspd"]
+[ext_resource type="Texture2D" uid="uid://wjseqyalf8yc" path="res://Images/green_pressed.png" id="3_d0667"]
 [ext_resource type="Texture2D" uid="uid://nbpinvqrehku" path="res://Images/blue_unpressed.png" id="4_w08bp"]
 [ext_resource type="Texture2D" uid="uid://cemps3wuyjskb" path="res://Images/yellow_unpressed.png" id="5_f7r6p"]
+[ext_resource type="Texture2D" uid="uid://bbkleg1qt6ywg" path="res://Images/red_pressed.png" id="5_ykl1h"]
 [ext_resource type="Texture2D" uid="uid://ddxgdcarxj6c5" path="res://Images/orange_unpressed.png" id="6_uim7d"]
+[ext_resource type="Texture2D" uid="uid://0wn4b5rcb2jx" path="res://Images/blue_pressed.png" id="7_dqgxn"]
+[ext_resource type="Texture2D" uid="uid://bfoncoqalrr76" path="res://Images/yellow_pressed.png" id="9_x5oq0"]
+[ext_resource type="Texture2D" uid="uid://c0rt27bi40suc" path="res://Images/orange_pressed.png" id="11_8ub2d"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_gocb3"]
+action = &"greenButtona"
+
+[sub_resource type="Shortcut" id="Shortcut_s7f47"]
+events = [SubResource("InputEventAction_gocb3")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_atwx8"]
+action = &"redButton"
+
+[sub_resource type="Shortcut" id="Shortcut_agef4"]
+events = [SubResource("InputEventAction_atwx8")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_86bcs"]
+action = &"blueButton"
+
+[sub_resource type="Shortcut" id="Shortcut_jvrxf"]
+events = [SubResource("InputEventAction_86bcs")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_oekwt"]
+action = &"yellowButton"
+
+[sub_resource type="Shortcut" id="Shortcut_j1dhm"]
+events = [SubResource("InputEventAction_oekwt")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_78tbh"]
+action = &"orangeButton"
+
+[sub_resource type="Shortcut" id="Shortcut_mrejo"]
+events = [SubResource("InputEventAction_78tbh")]
 
 [node name="game" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(550, 424)
-scale = Vector2(5.8125, 7.06667)
+position = Vector2(551, 424)
+scale = Vector2(5.84375, 7.06667)
 texture = ExtResource("1_rfijf")
 
-[node name="RedPressed" type="Sprite2D" parent="."]
-position = Vector2(474, 798)
-scale = Vector2(1.48805, 1.6093)
-texture = ExtResource("2_f7or2")
+[node name="GreenButton" type="TextureButton" parent="."]
+offset_left = 354.0
+offset_top = 742.0
+offset_right = 453.0
+offset_bottom = 848.0
+action_mode = 0
+button_mask = 0
+shortcut = SubResource("Shortcut_s7f47")
+texture_normal = ExtResource("2_ymspd")
+texture_pressed = ExtResource("3_d0667")
+stretch_mode = 0
 
-[node name="GreenUnpressed" type="Sprite2D" parent="."]
-position = Vector2(401, 798)
-scale = Vector2(1.41553, 1.52417)
-texture = ExtResource("2_ymspd")
+[node name="RedButton" type="TextureButton" parent="."]
+offset_left = 427.0
+offset_top = 742.0
+offset_right = 526.0
+offset_bottom = 848.0
+action_mode = 0
+shortcut = SubResource("Shortcut_agef4")
+texture_normal = ExtResource("2_f7or2")
+texture_pressed = ExtResource("5_ykl1h")
+stretch_mode = 0
 
-[node name="BlueUnpressed" type="Sprite2D" parent="."]
-position = Vector2(548, 799)
-scale = Vector2(1.53394, 1.59375)
-texture = ExtResource("4_w08bp")
+[node name="BlueButton" type="TextureButton" parent="."]
+offset_left = 500.0
+offset_top = 742.0
+offset_right = 599.0
+offset_bottom = 848.0
+action_mode = 0
+shortcut = SubResource("Shortcut_jvrxf")
+texture_normal = ExtResource("4_w08bp")
+texture_pressed = ExtResource("7_dqgxn")
+stretch_mode = 0
 
-[node name="YellowUnpressed" type="Sprite2D" parent="."]
-position = Vector2(622, 801)
-scale = Vector2(1.49435, 1.57373)
-texture = ExtResource("5_f7r6p")
+[node name="YellowButton" type="TextureButton" parent="."]
+offset_left = 575.0
+offset_top = 742.0
+offset_right = 674.0
+offset_bottom = 848.0
+action_mode = 0
+shortcut = SubResource("Shortcut_j1dhm")
+texture_normal = ExtResource("5_f7r6p")
+texture_pressed = ExtResource("9_x5oq0")
+stretch_mode = 0
 
-[node name="OrangeUnpressed" type="Sprite2D" parent="."]
-position = Vector2(697, 799)
-scale = Vector2(1.56067, 1.64319)
-texture = ExtResource("6_uim7d")
+[node name="OrangeButton" type="TextureButton" parent="."]
+offset_left = 649.0
+offset_top = 742.0
+offset_right = 748.0
+offset_bottom = 848.0
+action_mode = 0
+shortcut = SubResource("Shortcut_mrejo")
+texture_normal = ExtResource("6_uim7d")
+texture_pressed = ExtResource("11_8ub2d")
+stretch_mode = 0
