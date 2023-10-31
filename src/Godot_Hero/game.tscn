@@ -1,10 +1,40 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbvym3dbtqnn8"]
+[gd_scene load_steps=7 format=3 uid="uid://cbvym3dbtqnn8"]
 
 [ext_resource type="Texture2D" uid="uid://brpeogie4qrdt" path="res://Images/fretBoard.png" id="1_rfijf"]
+[ext_resource type="Texture2D" uid="uid://dp87kqc5d3vm" path="res://Images/red_unpressed.png" id="2_f7or2"]
+[ext_resource type="Texture2D" uid="uid://d2bwqn1d8bjpu" path="res://Images/green_unpressed.png" id="2_ymspd"]
+[ext_resource type="Texture2D" uid="uid://nbpinvqrehku" path="res://Images/blue_unpressed.png" id="4_w08bp"]
+[ext_resource type="Texture2D" uid="uid://cemps3wuyjskb" path="res://Images/yellow_unpressed.png" id="5_f7r6p"]
+[ext_resource type="Texture2D" uid="uid://ddxgdcarxj6c5" path="res://Images/orange_unpressed.png" id="6_uim7d"]
 
 [node name="game" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(583, 324)
-scale = Vector2(3.25, 5.4)
+position = Vector2(550, 424)
+scale = Vector2(5.8125, 7.06667)
 texture = ExtResource("1_rfijf")
+
+[node name="RedPressed" type="Sprite2D" parent="."]
+position = Vector2(474, 798)
+scale = Vector2(1.48805, 1.6093)
+texture = ExtResource("2_f7or2")
+
+[node name="GreenUnpressed" type="Sprite2D" parent="."]
+position = Vector2(401, 798)
+scale = Vector2(1.41553, 1.52417)
+texture = ExtResource("2_ymspd")
+
+[node name="BlueUnpressed" type="Sprite2D" parent="."]
+position = Vector2(548, 799)
+scale = Vector2(1.53394, 1.59375)
+texture = ExtResource("4_w08bp")
+
+[node name="YellowUnpressed" type="Sprite2D" parent="."]
+position = Vector2(622, 801)
+scale = Vector2(1.49435, 1.57373)
+texture = ExtResource("5_f7r6p")
+
+[node name="OrangeUnpressed" type="Sprite2D" parent="."]
+position = Vector2(697, 799)
+scale = Vector2(1.56067, 1.64319)
+texture = ExtResource("6_uim7d")

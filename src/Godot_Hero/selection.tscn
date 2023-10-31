@@ -11,8 +11,8 @@ scale = Vector2(0.998178, 1.00007)
 script = ExtResource("1_hkhgm")
 
 [node name="selectionBack" type="Sprite2D" parent="."]
-position = Vector2(576.049, 331.977)
-scale = Vector2(3.15479, 2.48084)
+position = Vector2(576.2, 424.47)
+scale = Vector2(3.15561, 3.25265)
 texture = ExtResource("1_1jry3")
 
 [node name="back" type="Button" parent="selectionBack"]
