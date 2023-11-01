@@ -5,7 +5,7 @@ extends Node2D
 func _on_rock_all_night_pressed():
 	get_tree().change_scene_to_file("res://game.tscn")
 	
-func _on_back():
+func _on_back_pressed():
 	get_tree().change_scene_to_file("res://menu.tscn")
 	
 func _on_even_flow_pressed():
