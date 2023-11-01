@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bgn4f1511mwpo"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_gxnje"]
-[ext_resource type="Texture2D" uid="uid://bycg5281jj2qn" path="res://Images/loading screen.png" id="2_hmmag"]
+[ext_resource type="Texture2D" uid="uid://8cwph3ueyjg6" path="res://Images/titleScreen.png" id="2_r31xs"]
 [ext_resource type="AudioStream" uid="uid://uqy5d0uyfr3c" path="res://Audio/spotifydown.com - Show Me How to Live.mp3" id="3_ccqua"]
 
 [node name="Menu" type="Node2D"]
@@ -9,25 +9,27 @@ position = Vector2(-2, 5)
 script = ExtResource("1_gxnje")
 
 [node name="menuBack" type="Sprite2D" parent="."]
-position = Vector2(576, 420.5)
-scale = Vector2(0.6, 0.786111)
-texture = ExtResource("2_hmmag")
+position = Vector2(579, 424.5)
+scale = Vector2(1.06296, 0.793519)
+texture = ExtResource("2_r31xs")
 
 [node name="Play" type="Button" parent="."]
-offset_left = 413.0
-offset_top = 321.0
-offset_right = 738.0
-offset_bottom = 380.0
+texture_filter = 1
+offset_left = 405.0
+offset_top = 668.0
+offset_right = 658.0
+offset_bottom = 711.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "PLAY
 "
 
 [node name="Quit" type="Button" parent="."]
-offset_left = 413.0
-offset_top = 389.0
-offset_right = 740.0
-offset_bottom = 438.0
+texture_filter = 1
+offset_left = 403.0
+offset_top = 716.0
+offset_right = 657.0
+offset_bottom = 755.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "QUIT"
