@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://cuff1ae4krm6m" path="res://Images/background1.jpg" id="1_1jry3"]
 [ext_resource type="Script" path="res://selection.gd" id="1_hkhgm"]
-[ext_resource type="AudioStream" uid="uid://cm6e17m8qkuq7" path="res://Audio/spotifydown.com - Rock And Roll All Nite Sample.mp3" id="4_da0dc"]
-[ext_resource type="AudioStream" uid="uid://dgk33euo7n6h1" path="res://Audio/spotifydown.com - Even Flow Sample.mp3" id="5_43ryy"]
-[ext_resource type="AudioStream" uid="uid://b6yxqcm0urkbe" path="res://Audio/spotifydown.com - Take Me Out Sample.mp3" id="6_0efxr"]
+[ext_resource type="AudioStream" uid="uid://bixnjgir8bdxg" path="res://Audio/spotifydown.com - Rock And Roll All Nite Sample.mp3" id="4_da0dc"]
+[ext_resource type="AudioStream" uid="uid://ddfa0ouj0gwbp" path="res://Audio/spotifydown.com - Even Flow Sample.mp3" id="5_43ryy"]
+[ext_resource type="AudioStream" uid="uid://b6ao2divbmbdv" path="res://Audio/spotifydown.com - Take Me Out Sample.mp3" id="6_0efxr"]
 
 [node name="selection" type="Node2D"]
 scale = Vector2(0.998178, 1.00007)
