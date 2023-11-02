@@ -9,8 +9,8 @@ position = Vector2(-2, 5)
 script = ExtResource("1_gxnje")
 
 [node name="menuBack" type="Sprite2D" parent="."]
-position = Vector2(579, 424.5)
-scale = Vector2(1.06296, 0.793519)
+position = Vector2(579, 424)
+scale = Vector2(1.06296, 0.792593)
 texture = ExtResource("2_r31xs")
 
 [node name="Play" type="Button" parent="."]
