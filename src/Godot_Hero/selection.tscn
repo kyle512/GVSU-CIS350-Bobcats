@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://qqgbix8tac70"]
 
-[ext_resource type="Texture2D" uid="uid://cuff1ae4krm6m" path="res://Images/background1.jpg" id="1_1jry3"]
 [ext_resource type="Script" path="res://selection.gd" id="1_hkhgm"]
+[ext_resource type="Texture2D" uid="uid://b6dbl13thjwus" path="res://Images/SongSelectionBack.png" id="2_1dhaa"]
 [ext_resource type="AudioStream" uid="uid://bixnjgir8bdxg" path="res://Audio/spotifydown.com - Rock And Roll All Nite Sample.mp3" id="4_da0dc"]
 [ext_resource type="AudioStream" uid="uid://ddfa0ouj0gwbp" path="res://Audio/spotifydown.com - Even Flow Sample.mp3" id="5_43ryy"]
 [ext_resource type="AudioStream" uid="uid://b6ao2divbmbdv" path="res://Audio/spotifydown.com - Take Me Out Sample.mp3" id="6_0efxr"]
@@ -11,32 +11,32 @@ scale = Vector2(0.998178, 1.00007)
 script = ExtResource("1_hkhgm")
 
 [node name="selectionBack" type="Sprite2D" parent="."]
-position = Vector2(576.2, 426.47)
-scale = Vector2(3.15561, 3.26797)
-texture = ExtResource("1_1jry3")
+position = Vector2(577.051, 423.97)
+scale = Vector2(1.06861, 0.78513)
+texture = ExtResource("2_1dhaa")
 
 [node name="rockAndRollAllNite" type="Button" parent="."]
-offset_left = 361.0
-offset_top = 123.0
-offset_right = 789.0
-offset_bottom = 208.0
+offset_left = 593.081
+offset_top = 127.991
+offset_right = 1021.08
+offset_bottom = 212.991
 scale = Vector2(0.99912, 1)
 text = "Rock and Roll All Nite
 Kiss - Dressed to Kill - 1975"
 
 [node name="evenFlow" type="Button" parent="."]
-offset_left = 362.0
-offset_top = 279.0
-offset_right = 792.0
-offset_bottom = 369.0
+offset_left = 593.081
+offset_top = 279.98
+offset_right = 1023.08
+offset_bottom = 369.98
 text = "Even Flow
 Pearl Jam - Ten - 1991"
 
 [node name="takeMeOut" type="Button" parent="."]
-offset_left = 363.0
-offset_top = 436.0
-offset_right = 793.0
-offset_bottom = 529.0
+offset_left = 593.081
+offset_top = 439.969
+offset_right = 1023.08
+offset_bottom = 532.969
 text = "Take Me Out
 Franz Ferdinand - Franz Ferdinand - 2004"
 
