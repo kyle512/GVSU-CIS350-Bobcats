@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://v6rc8vfriiqe"]
+
+[ext_resource type="Script" path="res://idle_oarnge.gd" id="1_qmixc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ylwmc"]
+
+[node name="Idle_Oarnge" type="Area2D"]
+script = ExtResource("1_qmixc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ylwmc")

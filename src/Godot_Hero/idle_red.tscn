@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4vl1qds1tibp"]
+
+[ext_resource type="Script" path="res://idle_red.gd" id="1_m17g2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gom7n"]
+
+[node name="Idle_Red" type="Area2D"]
+script = ExtResource("1_m17g2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gom7n")

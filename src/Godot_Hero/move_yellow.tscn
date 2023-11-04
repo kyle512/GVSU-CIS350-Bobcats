@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp4v7hq7qjukc"]
+
+[ext_resource type="Texture2D" uid="uid://bfoncoqalrr76" path="res://Images/yellow_pressed.png" id="1_rcwks"]
+[ext_resource type="Script" path="res://move_yellow.gd" id="1_unqql"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lsupr"]
+size = Vector2(20.8312, 38.0068)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_unqql")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rcwks")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.415586, -3.12552)
+shape = SubResource("RectangleShape2D_lsupr")

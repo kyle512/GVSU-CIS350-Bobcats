@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://vvx6yu7muo8e"]
+
+[ext_resource type="Texture2D" uid="uid://bbkleg1qt6ywg" path="res://Images/red_pressed.png" id="1_1dyle"]
+[ext_resource type="Script" path="res://move_red.gd" id="1_q1ajq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6j15l"]
+size = Vector2(21.1308, 38.2386)
+
+[node name="move_red" type="Area2D"]
+script = ExtResource("1_q1ajq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1dyle")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.510554, -3.1225)
+shape = SubResource("RectangleShape2D_6j15l")
