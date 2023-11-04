@@ -1,5 +1,6 @@
-[gd_scene load_steps=20 format=3 uid="uid://cbvym3dbtqnn8"]
+[gd_scene load_steps=19 format=3 uid="uid://cbvym3dbtqnn8"]
 
+[ext_resource type="Script" path="res://game.gd" id="1_78oe1"]
 [ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="1_d50vf"]
 [ext_resource type="Texture2D" uid="uid://brpeogie4qrdt" path="res://Images/fretBoard.png" id="1_rfijf"]
 [ext_resource type="Texture2D" uid="uid://dp87kqc5d3vm" path="res://Images/red_unpressed.png" id="2_f7or2"]
@@ -13,22 +14,13 @@
 [ext_resource type="Script" path="res://YellowButton.gd" id="9_0lpwv"]
 [ext_resource type="Script" path="res://OrangeButton.gd" id="11_2lgga"]
 [ext_resource type="PackedScene" uid="uid://4j0708tnwto1" path="res://idle_green.tscn" id="13_vi0g5"]
-[ext_resource type="PackedScene" uid="uid://dypxed1g8005o" path="res://move_green.tscn" id="14_xrda2"]
 [ext_resource type="PackedScene" uid="uid://c4vl1qds1tibp" path="res://idle_red.tscn" id="15_b1tyj"]
 [ext_resource type="PackedScene" uid="uid://b65gs5ixwobg3" path="res://idle_blue.tscn" id="16_jxgi6"]
 [ext_resource type="PackedScene" uid="uid://difawji7wghkg" path="res://idle_yellow.tscn" id="17_b2obg"]
 [ext_resource type="PackedScene" uid="uid://v6rc8vfriiqe" path="res://idle_oarnge.tscn" id="18_y41ly"]
 
-[sub_resource type="GDScript" id="GDScript_68eck"]
-script/source = "extends Node2D
-
-
-
-
-"
-
 [node name="game" type="Node2D"]
-script = SubResource("GDScript_68eck")
+script = ExtResource("1_78oe1")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(575.5, 424)
@@ -118,18 +110,24 @@ fit_content = true
 
 [node name="Spawn" type="Node2D" parent="."]
 
-[node name="Marker2D" type="Marker2D" parent="Spawn"]
+[node name="Marker2D_Green" type="Marker2D" parent="Spawn"]
 position = Vector2(448, -32)
 
-[node name="Timer" type="Timer" parent="."]
-autostart = true
+[node name="Marker2D_Red" type="Marker2D" parent="Spawn"]
+position = Vector2(520, -32)
+
+[node name="Marker2D_Blue" type="Marker2D" parent="Spawn"]
+position = Vector2(592, -32)
+
+[node name="Marker2D_Yellow" type="Marker2D" parent="Spawn"]
+position = Vector2(664, -32)
+
+[node name="Marker2D_Orange" type="Marker2D" parent="Spawn"]
+position = Vector2(736, -32)
 
 [node name="Idle_Green" parent="." instance=ExtResource("13_vi0g5")]
 position = Vector2(449, 792)
 scale = Vector2(2.5, 2.5)
-
-[node name="Move_Green" parent="." instance=ExtResource("14_xrda2")]
-position = Vector2(447, 52)
 
 [node name="Idle_Red" parent="." instance=ExtResource("15_b1tyj")]
 position = Vector2(519, 790)
@@ -146,5 +144,8 @@ scale = Vector2(2.5, 2.5)
 [node name="Idle_Oarnge" parent="." instance=ExtResource("18_y41ly")]
 position = Vector2(737, 790)
 scale = Vector2(2.5, 2.5)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
