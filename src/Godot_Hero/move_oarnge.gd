@@ -13,7 +13,8 @@ func _process(delta):
 	if sensor == 1:
 		if Global.sensor_O == 1:
 			if Global.but_press_O == 1:
-				queue_free()
+				if Input.is_action_pressed("Space"):
+					queue_free()
 
 
 func _on_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
