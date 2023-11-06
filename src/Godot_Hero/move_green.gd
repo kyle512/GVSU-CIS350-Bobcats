@@ -1,11 +1,10 @@
 extends Area2D
 
-var speed = 100
 var sensor = 0
 
 
 func _process(delta):
-	position.y += speed * delta
+	position.y += Global.note_speed * delta
 	
 	if position.y > 960:
 		queue_free()
