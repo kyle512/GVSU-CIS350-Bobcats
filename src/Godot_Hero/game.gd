@@ -12,38 +12,75 @@ func _process(delta):
 	
 	pass
 	
+func _enter_tree():
+	greenNote()
+	await get_tree().create_timer(1.0).timeout
+	redNote()
+	await get_tree().create_timer(1.0).timeout
+	blueNote()
+	await get_tree().create_timer(1.0).timeout
+	yellowNote()
+	await get_tree().create_timer(1.0).timeout
+	orangeNote()
 	
+func greenNote():
+	var green = Gnote.instantiate()
+	add_child(green)
+	green.position = $Spawn/Marker2D_Green.position
+	
+func redNote():
+	var red = Rnote.instantiate()
+	add_child(red)
+	red.position = $Spawn/Marker2D_Red.position
+	
+func blueNote():
+	var blue = Bnote.instantiate()
+	add_child(blue)
+	blue.position = $Spawn/Marker2D_Blue.position
+	
+func yellowNote():
+	var yellow = Ynote.instantiate()
+	add_child(yellow)
+	yellow.position = $Spawn/Marker2D_Yellow.position
+	
+func orangeNote():
+	var orange = Onote.instantiate()
+	add_child(orange)
+	orange.position = $Spawn/Marker2D_Orange.position
 
 
-func _on_timer_timeout():
-	$Timer.start()
 	
-	RNG.randomize()
-	var random = RNG.randi_range(0,5)
-	
-	
-	if random == 1:
-		var green = Gnote.instantiate()
-		add_child(green)
-		green.position = $Spawn/Marker2D_Green.position
+#func _on_timer_timeout():
+#	$Timer.start()
+#	
+#	var note = 1
+#	
+#	
+#	if note == 1:
+#		var green = Gnote.instantiate()
+#		add_child(green)
+#		green.position = $Spawn/Marker2D_Green.position
+#		
+#	if note == 2:
+#		var red = Rnote.instantiate()
+#		add_child(red)
+#		red.position = $Spawn/Marker2D_Red.position
+#	
+#	if note == 3:
+#		var blue = Bnote.instantiate()
+#		add_child(blue)
+#		blue.position = $Spawn/Marker2D_Blue.position
+#	
+#	if note == 4:
+#		var yellow = Ynote.instantiate()
+#		add_child(yellow)
+#		yellow.position = $Spawn/Marker2D_Yellow.position
+#		
+#	if note == 5:
+#		var orange = Onote.instantiate()
+#		add_child(orange)
+#		orange.position = $Spawn/Marker2D_Orange.position
 		
-	if random == 2:
-		var red = Rnote.instantiate()
-		add_child(red)
-		red.position = $Spawn/Marker2D_Red.position
 	
-	if random == 3:
-		var blue = Bnote.instantiate()
-		add_child(blue)
-		blue.position = $Spawn/Marker2D_Blue.position
-	
-	if random == 4:
-		var yellow = Ynote.instantiate()
-		add_child(yellow)
-		yellow.position = $Spawn/Marker2D_Yellow.position
-		
-	if random == 5:
-		var orange = Onote.instantiate()
-		add_child(orange)
-		orange.position = $Spawn/Marker2D_Orange.position
+
 	
