@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cbvym3dbtqnn8"]
+[gd_scene load_steps=20 format=3 uid="uid://cbvym3dbtqnn8"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_78oe1"]
 [ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="1_d50vf"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://b65gs5ixwobg3" path="res://idle_blue.tscn" id="16_jxgi6"]
 [ext_resource type="PackedScene" uid="uid://difawji7wghkg" path="res://idle_yellow.tscn" id="17_b2obg"]
 [ext_resource type="PackedScene" uid="uid://v6rc8vfriiqe" path="res://idle_oarnge.tscn" id="18_y41ly"]
+[ext_resource type="AudioStream" uid="uid://cmnht1g0eqtks" path="res://spotifydown.com - Rock And Roll All Nite.mp3" id="19_yxrc1"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_78oe1")
@@ -148,5 +149,10 @@ scale = Vector2(2.5, 2.5)
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.462
 autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_yxrc1")
+volume_db = -15.0
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
