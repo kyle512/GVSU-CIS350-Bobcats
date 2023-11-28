@@ -4,17 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://wjseqyalf8yc" path="res://Images/green_pressed.png" id="1_wmwix"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rug1j"]
-size = Vector2(21.308, 38.2176)
+size = Vector2(21.308, 12.2772)
 
 [node name="Move_Green" type="Area2D"]
 script = ExtResource("1_p3psb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.795746, 2)
+position = Vector2(0, 1.19209e-07)
+scale = Vector2(1.207, 1.22325)
 texture = ExtResource("1_wmwix")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.471906, -1.03001)
+position = Vector2(0, -22.1386)
 shape = SubResource("RectangleShape2D_rug1j")
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
