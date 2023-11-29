@@ -1,6 +1,8 @@
 # Bobcats
 
-Project description (~1 paragraph)
+Godot Hero, a guitar game based off the popular game Guitar Hero. Pick from a selection of songs to play along with while trying to accurately hit every note. 
+Use the "Y U I O P" keys as the green, red, blue, yellow, and orange notes. Use the space bar to strum the notes as they pass by the large circle notes on the bottom 
+of the fret board. Rock on!
 
 ## Team Members and Roles
 
