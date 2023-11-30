@@ -13,7 +13,7 @@ func _process(delta):
 	if sensor == 1:
 		if Global.sensor_R == 1:
 			if Global.but_press_R == 1:
-				if Input.is_action_pressed("Space"):
+				if Input.is_action_just_pressed("Space"):
 					queue_free()
 
 

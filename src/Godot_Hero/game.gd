@@ -13,7 +13,7 @@ func _process(delta):
 	pass
 	
 func _enter_tree():
-	Global.note_speed = 190
+	Global.note_speed = 185
 	greenNote()
 	await get_tree().create_timer(0.55).timeout
 	greenNote()
@@ -23,9 +23,65 @@ func _enter_tree():
 	greenNote()
 	await get_tree().create_timer(0.40).timeout
 	greenNote()
-	await get_tree().create_timer(0.18).timeout
+	await get_tree().create_timer(0.15).timeout
 	redNote()
-	await get_tree().create_timer(0.48).timeout
+	await get_tree().create_timer(0.42).timeout
+	yellowNote()
+	greenNote()
+	
+	await get_tree().create_timer(1.55).timeout
+	yellowNote()
+	await get_tree().create_timer(0.4).timeout
+	yellowNote()
+	await get_tree().create_timer(0.2).timeout
+	blueNote()
+	await get_tree().create_timer(0.35).timeout
+	redNote()
+	await get_tree().create_timer(0.23).timeout
+	greenNote()
+	await get_tree().create_timer(0.42).timeout
+	yellowNote()
+	greenNote()
+	
+	await get_tree().create_timer(1.6).timeout
+	yellowNote()
+	await get_tree().create_timer(0.4).timeout
+	yellowNote()
+	await get_tree().create_timer(0.2).timeout
+	blueNote()
+	await get_tree().create_timer(0.35).timeout
+	redNote()
+	await get_tree().create_timer(0.23).timeout
+	greenNote()
+	await get_tree().create_timer(0.42).timeout
+	yellowNote()
+	greenNote()
+	
+	await get_tree().create_timer(1.65).timeout
+	yellowNote()
+	await get_tree().create_timer(0.4).timeout
+	yellowNote()
+	await get_tree().create_timer(0.2).timeout
+	blueNote()
+	await get_tree().create_timer(0.4).timeout
+	redNote()
+	await get_tree().create_timer(0.23).timeout
+	greenNote()
+	await get_tree().create_timer(0.42).timeout
+	yellowNote()
+	greenNote()
+	
+	await get_tree().create_timer(1.65).timeout
+	yellowNote()
+	await get_tree().create_timer(0.4).timeout
+	yellowNote()
+	await get_tree().create_timer(0.23).timeout
+	blueNote()
+	await get_tree().create_timer(0.4).timeout
+	redNote()
+	await get_tree().create_timer(0.23).timeout
+	greenNote()
+	await get_tree().create_timer(0.42).timeout
 	yellowNote()
 	greenNote()
 	
