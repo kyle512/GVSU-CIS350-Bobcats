@@ -35,6 +35,17 @@ position = Vector2(591, 424)
 scale = Vector2(5.84375, 7.0467)
 texture = ExtResource("1_rfijf")
 
+[node name="BackButton" type="Button" parent="."]
+offset_left = 87.0
+offset_top = 506.0
+offset_right = 349.0
+offset_bottom = 690.0
+text = "
+
+	           
+               BACK TO SONGS"
+flat = true
+
 [node name="GreenButton" type="TextureButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.901961)
 texture_filter = 1
@@ -155,4 +166,5 @@ stream = ExtResource("19_yxrc1")
 volume_db = -15.0
 autoplay = true
 
+[connection signal="pressed" from="BackButton" to="." method="_on_back_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

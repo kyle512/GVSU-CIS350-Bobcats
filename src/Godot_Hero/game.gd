@@ -13,15 +13,21 @@ func _process(delta):
 	pass
 	
 func _enter_tree():
+	Global.note_speed = 190
 	greenNote()
-	await get_tree().create_timer(1.0).timeout
-	redNote()
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(0.55).timeout
+	greenNote()
+	await get_tree().create_timer(0.55).timeout
 	blueNote()
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(0.55).timeout
+	greenNote()
+	await get_tree().create_timer(0.40).timeout
+	greenNote()
+	await get_tree().create_timer(0.18).timeout
+	redNote()
+	await get_tree().create_timer(0.48).timeout
 	yellowNote()
-	await get_tree().create_timer(1.0).timeout
-	orangeNote()
+	greenNote()
 	
 func greenNote():
 	var green = Gnote.instantiate()
@@ -47,6 +53,9 @@ func orangeNote():
 	var orange = Onote.instantiate()
 	add_child(orange)
 	orange.position = $Spawn/Marker2D_Orange.position
+	
+func _on_back_pressed():
+	get_tree().change_scene_to_file("res://selection.tscn")
 
 
 	
@@ -84,3 +93,6 @@ func orangeNote():
 	
 
 	
+
+
+
