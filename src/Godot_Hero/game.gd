@@ -13,77 +13,111 @@ func _process(delta):
 	pass
 	
 func _enter_tree():
-	Global.note_speed = 185
+	Global.note_speed = 192
+	#intro
 	greenNote()
 	await get_tree().create_timer(0.55).timeout
 	greenNote()
-	await get_tree().create_timer(0.55).timeout
+	await get_tree().create_timer(0.6).timeout
 	blueNote()
-	await get_tree().create_timer(0.55).timeout
+	await get_tree().create_timer(0.5).timeout
 	greenNote()
-	await get_tree().create_timer(0.40).timeout
+	await get_tree().create_timer(0.35).timeout
 	greenNote()
 	await get_tree().create_timer(0.15).timeout
 	redNote()
-	await get_tree().create_timer(0.42).timeout
+	await get_tree().create_timer(0.47).timeout
 	yellowNote()
 	greenNote()
-	
-	await get_tree().create_timer(1.55).timeout
+	#Repeat part
+	await get_tree().create_timer(1.62).timeout
 	yellowNote()
-	await get_tree().create_timer(0.4).timeout
+	await get_tree().create_timer(0.45).timeout
 	yellowNote()
-	await get_tree().create_timer(0.2).timeout
-	blueNote()
-	await get_tree().create_timer(0.35).timeout
-	redNote()
-	await get_tree().create_timer(0.23).timeout
-	greenNote()
-	await get_tree().create_timer(0.42).timeout
-	yellowNote()
-	greenNote()
-	
-	await get_tree().create_timer(1.6).timeout
-	yellowNote()
-	await get_tree().create_timer(0.4).timeout
-	yellowNote()
-	await get_tree().create_timer(0.2).timeout
-	blueNote()
-	await get_tree().create_timer(0.35).timeout
-	redNote()
-	await get_tree().create_timer(0.23).timeout
-	greenNote()
-	await get_tree().create_timer(0.42).timeout
-	yellowNote()
-	greenNote()
-	
-	await get_tree().create_timer(1.65).timeout
-	yellowNote()
-	await get_tree().create_timer(0.4).timeout
-	yellowNote()
-	await get_tree().create_timer(0.2).timeout
+	await get_tree().create_timer(0.18).timeout
 	blueNote()
 	await get_tree().create_timer(0.4).timeout
 	redNote()
-	await get_tree().create_timer(0.23).timeout
+	await get_tree().create_timer(0.18).timeout
 	greenNote()
-	await get_tree().create_timer(0.42).timeout
+	await get_tree().create_timer(0.47).timeout
 	yellowNote()
 	greenNote()
-	
-	await get_tree().create_timer(1.65).timeout
+	#Repeat part
+	await get_tree().create_timer(1.60).timeout
 	yellowNote()
-	await get_tree().create_timer(0.4).timeout
+	await get_tree().create_timer(0.45).timeout
 	yellowNote()
-	await get_tree().create_timer(0.23).timeout
+	await get_tree().create_timer(0.18).timeout
 	blueNote()
 	await get_tree().create_timer(0.4).timeout
 	redNote()
-	await get_tree().create_timer(0.23).timeout
+	await get_tree().create_timer(0.18).timeout
 	greenNote()
-	await get_tree().create_timer(0.42).timeout
+	await get_tree().create_timer(0.47).timeout
 	yellowNote()
 	greenNote()
+	#Repeat part
+	await get_tree().create_timer(1.60).timeout
+	yellowNote()
+	await get_tree().create_timer(0.45).timeout
+	yellowNote()
+	await get_tree().create_timer(0.18).timeout
+	blueNote()
+	await get_tree().create_timer(0.4).timeout
+	redNote()
+	await get_tree().create_timer(0.18).timeout
+	greenNote()
+	await get_tree().create_timer(0.47).timeout
+	yellowNote()
+	greenNote()
+	#Repeat part
+	await get_tree().create_timer(1.60).timeout
+	yellowNote()
+	await get_tree().create_timer(0.45).timeout
+	yellowNote()
+	await get_tree().create_timer(0.18).timeout
+	blueNote()
+	await get_tree().create_timer(0.4).timeout
+	redNote()
+	await get_tree().create_timer(0.18).timeout
+	greenNote()
+	await get_tree().create_timer(0.49).timeout
+	orangeNote()
+	greenNote()
+	##Part between repeat part
+	await get_tree().create_timer(0.44).timeout
+	yellowNote()
+	await get_tree().create_timer(0.15).timeout
+	blueNote()
+	await get_tree().create_timer(0.4).timeout
+	redNote()
+	await get_tree().create_timer(0.15).timeout
+	greenNote()
+	await get_tree().create_timer(0.47).timeout
+	yellowNote()
+	greenNote()
+	await get_tree().create_timer(0.44).timeout
+	yellowNote()
+	await get_tree().create_timer(0.15).timeout
+	blueNote()
+	await get_tree().create_timer(0.4).timeout
+	redNote()
+	await get_tree().create_timer(0.15).timeout
+	greenNote()
+	#waaa waaa wa wa wa wa
+	await get_tree().create_timer(1.15).timeout
+	greenNote()
+	redNote()
+	await get_tree().create_timer(0.53).timeout
+	greenNote()
+	redNote()
+	await get_tree().create_timer(0.53).timeout
+	redNote()
+	blueNote()
+	#await get_tree().create_timer(0.5).timeout
+	#greenNote()
+	#redNote()
 	
 func greenNote():
 	var green = Gnote.instantiate()
