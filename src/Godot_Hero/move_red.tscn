@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://move_red.gd" id="1_q1ajq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6j15l"]
-size = Vector2(22.5654, 28.1552)
+size = Vector2(22.5654, 22.3104)
 
 [node name="move_red" type="Area2D"]
 script = ExtResource("1_q1ajq")
@@ -15,7 +15,7 @@ scale = Vector2(1.21875, 1.28125)
 texture = ExtResource("1_1dyle")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -16.0776)
+position = Vector2(0, -19)
 shape = SubResource("RectangleShape2D_6j15l")
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
