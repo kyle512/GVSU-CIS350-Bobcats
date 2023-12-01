@@ -1,0 +1,170 @@
+[gd_scene load_steps=20 format=3 uid="uid://cbvym3dbtqnn8"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_78oe1"]
+[ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="1_d50vf"]
+[ext_resource type="Texture2D" uid="uid://brpeogie4qrdt" path="res://Images/fretBoard.png" id="1_rfijf"]
+[ext_resource type="Texture2D" uid="uid://dp87kqc5d3vm" path="res://Images/red_unpressed.png" id="2_f7or2"]
+[ext_resource type="Texture2D" uid="uid://d2bwqn1d8bjpu" path="res://Images/green_unpressed.png" id="2_ymspd"]
+[ext_resource type="Script" path="res://GreenButton.gd" id="4_325gw"]
+[ext_resource type="Texture2D" uid="uid://nbpinvqrehku" path="res://Images/blue_unpressed.png" id="4_w08bp"]
+[ext_resource type="Script" path="res://RedButton.gd" id="5_bnjmt"]
+[ext_resource type="Texture2D" uid="uid://cemps3wuyjskb" path="res://Images/yellow_unpressed.png" id="5_f7r6p"]
+[ext_resource type="Texture2D" uid="uid://ddxgdcarxj6c5" path="res://Images/orange_unpressed.png" id="6_uim7d"]
+[ext_resource type="Script" path="res://BlueButton.gd" id="7_cgoe4"]
+[ext_resource type="Script" path="res://YellowButton.gd" id="9_0lpwv"]
+[ext_resource type="Script" path="res://OrangeButton.gd" id="11_2lgga"]
+[ext_resource type="PackedScene" uid="uid://4j0708tnwto1" path="res://idle_green.tscn" id="13_vi0g5"]
+[ext_resource type="PackedScene" uid="uid://c4vl1qds1tibp" path="res://idle_red.tscn" id="15_b1tyj"]
+[ext_resource type="PackedScene" uid="uid://b65gs5ixwobg3" path="res://idle_blue.tscn" id="16_jxgi6"]
+[ext_resource type="PackedScene" uid="uid://difawji7wghkg" path="res://idle_yellow.tscn" id="17_b2obg"]
+[ext_resource type="PackedScene" uid="uid://v6rc8vfriiqe" path="res://idle_oarnge.tscn" id="18_y41ly"]
+[ext_resource type="AudioStream" uid="uid://cmnht1g0eqtks" path="res://spotifydown.com - Rock And Roll All Nite.mp3" id="19_yxrc1"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_78oe1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(575.5, 424)
+scale = Vector2(1.06389, 0.785185)
+texture = ExtResource("1_d50vf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.933333)
+texture_filter = 1
+position = Vector2(591, 424)
+scale = Vector2(5.84375, 7.0467)
+texture = ExtResource("1_rfijf")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 87.0
+offset_top = 506.0
+offset_right = 349.0
+offset_bottom = 690.0
+text = "
+
+	           
+               BACK TO SONGS"
+flat = true
+
+[node name="GreenButton" type="TextureButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.901961)
+texture_filter = 1
+offset_left = 400.0
+offset_top = 744.0
+offset_right = 499.0
+offset_bottom = 850.0
+action_mode = 0
+button_mask = 0
+texture_normal = ExtResource("2_ymspd")
+stretch_mode = 0
+script = ExtResource("4_325gw")
+
+[node name="RedButton" type="TextureButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.901961)
+texture_filter = 1
+offset_left = 470.0
+offset_top = 742.0
+offset_right = 569.0
+offset_bottom = 848.0
+action_mode = 0
+button_mask = 0
+texture_normal = ExtResource("2_f7or2")
+stretch_mode = 0
+script = ExtResource("5_bnjmt")
+
+[node name="BlueButton" type="TextureButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.901961)
+texture_filter = 1
+offset_left = 543.0
+offset_top = 742.0
+offset_right = 642.0
+offset_bottom = 848.0
+action_mode = 0
+button_mask = 0
+texture_normal = ExtResource("4_w08bp")
+stretch_mode = 0
+script = ExtResource("7_cgoe4")
+
+[node name="YellowButton" type="TextureButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.901961)
+texture_filter = 1
+offset_left = 616.0
+offset_top = 742.0
+offset_right = 715.0
+offset_bottom = 848.0
+action_mode = 0
+button_mask = 0
+texture_normal = ExtResource("5_f7r6p")
+stretch_mode = 0
+script = ExtResource("9_0lpwv")
+
+[node name="OrangeButton" type="TextureButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.901961)
+texture_filter = 1
+offset_left = 688.0
+offset_top = 742.0
+offset_right = 787.0
+offset_bottom = 848.0
+action_mode = 0
+button_mask = 0
+texture_normal = ExtResource("6_uim7d")
+stretch_mode = 0
+script = ExtResource("11_2lgga")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 13.0
+offset_top = 771.0
+offset_right = 364.0
+offset_bottom = 840.0
+text = "Use \"Y, U, I, O, P\" keys to press the 
+green, red, blue, yellow, and orange, notes"
+fit_content = true
+
+[node name="Spawn" type="Node2D" parent="."]
+
+[node name="Marker2D_Green" type="Marker2D" parent="Spawn"]
+position = Vector2(448, -32)
+
+[node name="Marker2D_Red" type="Marker2D" parent="Spawn"]
+position = Vector2(520, -32)
+
+[node name="Marker2D_Blue" type="Marker2D" parent="Spawn"]
+position = Vector2(592, -32)
+
+[node name="Marker2D_Yellow" type="Marker2D" parent="Spawn"]
+position = Vector2(664, -32)
+
+[node name="Marker2D_Orange" type="Marker2D" parent="Spawn"]
+position = Vector2(736, -32)
+
+[node name="Idle_Green" parent="." instance=ExtResource("13_vi0g5")]
+position = Vector2(449, 792)
+scale = Vector2(2.5, 2.5)
+
+[node name="Idle_Red" parent="." instance=ExtResource("15_b1tyj")]
+position = Vector2(519, 790)
+scale = Vector2(2.5, 2.5)
+
+[node name="Idle_Blue" parent="." instance=ExtResource("16_jxgi6")]
+position = Vector2(592, 790)
+scale = Vector2(2.5, 2.5)
+
+[node name="Idle_Yellow" parent="." instance=ExtResource("17_b2obg")]
+position = Vector2(665, 790)
+scale = Vector2(2.5, 2.5)
+
+[node name="Idle_Oarnge" parent="." instance=ExtResource("18_y41ly")]
+position = Vector2(737, 790)
+scale = Vector2(2.5, 2.5)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.462
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_yxrc1")
+volume_db = -15.0
+autoplay = true
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
