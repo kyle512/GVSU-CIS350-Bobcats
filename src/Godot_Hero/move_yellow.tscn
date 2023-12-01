@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://move_yellow.gd" id="1_unqql"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lsupr"]
-size = Vector2(22.4156, 25.7822)
+size = Vector2(22.4156, 21.5644)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_unqql")
@@ -14,7 +14,7 @@ scale = Vector2(1.17578, 1.19141)
 texture = ExtResource("1_rcwks")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -14.8911)
+position = Vector2(0, -17)
 shape = SubResource("RectangleShape2D_lsupr")
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]

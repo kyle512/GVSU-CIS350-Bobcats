@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://wjseqyalf8yc" path="res://Images/green_pressed.png" id="1_wmwix"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rug1j"]
-size = Vector2(22.654, 27.1386)
+size = Vector2(22.654, 20.2772)
 
 [node name="Move_Green" type="Area2D"]
 script = ExtResource("1_p3psb")
@@ -15,7 +15,7 @@ scale = Vector2(1.207, 1.22325)
 texture = ExtResource("1_wmwix")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -14.5693)
+position = Vector2(0, -18)
 shape = SubResource("RectangleShape2D_rug1j")
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
