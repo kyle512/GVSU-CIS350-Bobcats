@@ -108,16 +108,20 @@ func _enter_tree():
 	#waaa waaa wa wa wa wa
 	await get_tree().create_timer(1.15).timeout
 	greenNote()
+	blueNote()
+	await get_tree().create_timer(0.53).timeout
+	greenNote()
+	blueNote()
+	await get_tree().create_timer(0.53).timeout
 	redNote()
 	await get_tree().create_timer(0.53).timeout
 	greenNote()
-	redNote()
-	await get_tree().create_timer(0.53).timeout
-	redNote()
 	blueNote()
-	#await get_tree().create_timer(0.5).timeout
-	#greenNote()
-	#redNote()
+	await get_tree().create_timer(0.4).timeout
+	greenNote()
+	blueNote()
+	await get_tree().create_timer(0.18).timeout
+	redNote()
 	
 func greenNote():
 	var green = Gnote.instantiate()
