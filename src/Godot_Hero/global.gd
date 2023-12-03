@@ -15,4 +15,4 @@ var but_press_O = 0
 
 var note_speed = 100
 
-var score = 0
+var score = 1000
