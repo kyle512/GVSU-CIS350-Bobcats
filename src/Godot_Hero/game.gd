@@ -16,135 +16,8 @@ func _process(delta):
 func _enter_tree():
 	#Speed of song
 	Global.note_speed = 192
-	intro()
 	
-	await get_tree().create_timer(2.75).timeout
-	repeat()
-	await get_tree().create_timer(3.28).timeout
-	repeat()
-	await get_tree().create_timer(3.28).timeout
-	repeat()
-	await get_tree().create_timer(3.28).timeout
-	repeat()
-	
-	await get_tree().create_timer(2).timeout
-	afterRepeat()
-	await get_tree().create_timer(4.3).timeout
-	endRepeat()
-	await get_tree().create_timer(3.6).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(0.08).timeout
-	repeat()
-	await get_tree().create_timer(3.25).timeout
-	repeat()
-
-	await get_tree().create_timer(2).timeout
-	afterRepeat()
-	await get_tree().create_timer(4.3).timeout
-	endRepeat()
-	
-	await get_tree().create_timer(3.65).timeout
-	greenNote()
-	blueNote()
-	await get_tree().create_timer(1.65).timeout
-	greenNote()
-	orangeNote()
-	await get_tree().create_timer(5).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(2).timeout
-	afterRepeat()
-	await get_tree().create_timer(5.3).timeout
-	greenNote()
-	redNote()
-	
-	
-	await get_tree().create_timer(1.3).timeout
-	afterRepeat()
-	await get_tree().create_timer(5.3).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(12.2).timeout
-	endRepeat()
-	await get_tree().create_timer(3.6).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(0.08).timeout
-	repeat()
-	await get_tree().create_timer(3.25).timeout
-	repeat()
-	
-	await get_tree().create_timer(2).timeout
-	afterRepeat()
-	await get_tree().create_timer(4.3).timeout
-	endRepeat()
-	await get_tree().create_timer(3.6).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(0.12).timeout
-	repeat()
-	await get_tree().create_timer(3.25).timeout
-	repeat()
-	
-	await get_tree().create_timer(2).timeout
-	afterRepeat()
-	await get_tree().create_timer(4.3).timeout
-	endRepeat()
-	await get_tree().create_timer(3.6).timeout
-	
-	await get_tree().create_timer(0.3).timeout
-	greenNote()
-	blueNote()
-	await get_tree().create_timer(1.65).timeout
-	greenNote()
-	orangeNote()
-	await get_tree().create_timer(4.9).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(2).timeout
-	afterRepeat()
-	await get_tree().create_timer(5.3).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(1.3).timeout
-	afterRepeat()
-	await get_tree().create_timer(5.3).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(13).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(1.5).timeout
-	afterRepeat()
-	await get_tree().create_timer(5.3).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(1.3).timeout
-	afterRepeat()
-	await get_tree().create_timer(5.3).timeout
-	greenNote()
-	redNote()
-	
-	await get_tree().create_timer(1.3).timeout
-	afterRepeat()
-	await get_tree().create_timer(5.3).timeout
-	greenNote()
-	redNote()
-	
-	
-#intro which is used a couple times
-func intro():
+	#intro
 	greenNote()
 	await get_tree().create_timer(0.55).timeout
 	greenNote()
@@ -159,6 +32,130 @@ func intro():
 	await get_tree().create_timer(0.47).timeout
 	yellowNote()
 	greenNote()
+	#repeat section
+	await get_tree().create_timer(2.75).timeout
+	repeat()
+	await get_tree().create_timer(3.28).timeout
+	repeat()
+	await get_tree().create_timer(3.28).timeout
+	repeat()
+	await get_tree().create_timer(3.28).timeout
+	repeat()
+	#Between repeats
+	await get_tree().create_timer(2).timeout
+	afterRepeat()
+	await get_tree().create_timer(4.3).timeout
+	endRepeat()
+	await get_tree().create_timer(3.6).timeout
+	greenNote()
+	redNote()
+	#reepeat sectino
+	await get_tree().create_timer(0.08).timeout
+	repeat()
+	await get_tree().create_timer(3.25).timeout
+	repeat()
+	#end repeat
+	await get_tree().create_timer(2).timeout
+	afterRepeat()
+	await get_tree().create_timer(4.3).timeout
+	endRepeat()
+	#silent part
+	await get_tree().create_timer(3.65).timeout
+	greenNote()
+	blueNote()
+	await get_tree().create_timer(1.65).timeout
+	greenNote()
+	orangeNote()
+	await get_tree().create_timer(5).timeout
+	greenNote()
+	redNote()
+	#2nd repeat part
+	await get_tree().create_timer(2).timeout
+	afterRepeat()
+	await get_tree().create_timer(5.3).timeout
+	greenNote()
+	redNote()
+	#2nd repeat part
+	await get_tree().create_timer(1.3).timeout
+	afterRepeat()
+	await get_tree().create_timer(5.3).timeout
+	greenNote()
+	redNote()
+	#after silent part
+	await get_tree().create_timer(12.2).timeout
+	endRepeat()
+	await get_tree().create_timer(3.6).timeout
+	greenNote()
+	redNote()
+	#repeat
+	await get_tree().create_timer(0.08).timeout
+	repeat()
+	await get_tree().create_timer(3.25).timeout
+	repeat()
+	#end repeat
+	await get_tree().create_timer(2).timeout
+	afterRepeat()
+	await get_tree().create_timer(4.3).timeout
+	endRepeat()
+	await get_tree().create_timer(3.6).timeout
+	greenNote()
+	redNote()
+	#repeat
+	await get_tree().create_timer(0.12).timeout
+	repeat()
+	await get_tree().create_timer(3.25).timeout
+	repeat()
+	#end repeat
+	await get_tree().create_timer(2).timeout
+	afterRepeat()
+	await get_tree().create_timer(4.3).timeout
+	endRepeat()
+	await get_tree().create_timer(3.6).timeout
+	#silent part
+	await get_tree().create_timer(0.3).timeout
+	greenNote()
+	blueNote()
+	await get_tree().create_timer(1.65).timeout
+	greenNote()
+	orangeNote()
+	await get_tree().create_timer(4.9).timeout
+	greenNote()
+	redNote()
+	#2nd repeat
+	await get_tree().create_timer(2).timeout
+	afterRepeat()
+	await get_tree().create_timer(5.3).timeout
+	greenNote()
+	redNote()
+	#2nd repeat
+	await get_tree().create_timer(1.3).timeout
+	afterRepeat()
+	await get_tree().create_timer(5.3).timeout
+	greenNote()
+	redNote()
+	#silent part
+	await get_tree().create_timer(13).timeout
+	greenNote()
+	redNote()
+	#last repeats of song
+	await get_tree().create_timer(1.5).timeout
+	afterRepeat()
+	await get_tree().create_timer(5.3).timeout
+	greenNote()
+	redNote()
+	#last repeats of song
+	await get_tree().create_timer(1.3).timeout
+	afterRepeat()
+	await get_tree().create_timer(5.3).timeout
+	greenNote()
+	redNote()
+	#last repeats of song
+	await get_tree().create_timer(1.3).timeout
+	afterRepeat()
+	await get_tree().create_timer(5.3).timeout
+	greenNote()
+	redNote()
+	
 	
 #much repeated part
 func repeat():
@@ -237,43 +234,6 @@ func orangeNote():
 #Back to song selection button
 func _on_back_pressed():
 	get_tree().change_scene_to_file("res://selection.tscn")
-
-
-	
-#func _on_timer_timeout():
-#	$Timer.start()
-#	
-#	var note = 1
-#	
-#	
-#	if note == 1:
-#		var green = Gnote.instantiate()
-#		add_child(green)
-#		green.position = $Spawn/Marker2D_Green.position
-#		
-#	if note == 2:
-#		var red = Rnote.instantiate()
-#		add_child(red)
-#		red.position = $Spawn/Marker2D_Red.position
-#	
-#	if note == 3:
-#		var blue = Bnote.instantiate()
-#		add_child(blue)
-#		blue.position = $Spawn/Marker2D_Blue.position
-#	
-#	if note == 4:
-#		var yellow = Ynote.instantiate()
-#		add_child(yellow)
-#		yellow.position = $Spawn/Marker2D_Yellow.position
-#		
-#	if note == 5:
-#		var orange = Onote.instantiate()
-#		add_child(orange)
-#		orange.position = $Spawn/Marker2D_Orange.position
-		
-	
-
-	
 
 
 
