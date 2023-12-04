@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cbvym3dbtqnn8"]
+[gd_scene load_steps=22 format=3 uid="uid://cbvym3dbtqnn8"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_78oe1"]
 [ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="1_d50vf"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://v6rc8vfriiqe" path="res://idle_oarnge.tscn" id="18_y41ly"]
 [ext_resource type="AudioStream" uid="uid://cmnht1g0eqtks" path="res://spotifydown.com - Rock And Roll All Nite.mp3" id="19_yxrc1"]
 [ext_resource type="Script" path="res://Score.gd" id="20_kbm27"]
+[ext_resource type="AudioStream" uid="uid://c642pkfbsivk1" path="res://Audio/Missed note sound effect.mp3" id="21_f84uj"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_78oe1")
@@ -139,33 +140,37 @@ position = Vector2(664, -32)
 position = Vector2(736, -32)
 
 [node name="Idle_Green" parent="." instance=ExtResource("13_vi0g5")]
-position = Vector2(449, 792)
+position = Vector2(448, 771)
 scale = Vector2(2.5, 2.5)
 
 [node name="Idle_Red" parent="." instance=ExtResource("15_b1tyj")]
-position = Vector2(519, 790)
+position = Vector2(520, 771)
 scale = Vector2(2.5, 2.5)
 
 [node name="Idle_Blue" parent="." instance=ExtResource("16_jxgi6")]
-position = Vector2(592, 790)
+position = Vector2(592, 771)
 scale = Vector2(2.5, 2.5)
 
 [node name="Idle_Yellow" parent="." instance=ExtResource("17_b2obg")]
-position = Vector2(665, 790)
+position = Vector2(664, 771)
 scale = Vector2(2.5, 2.5)
 
 [node name="Idle_Oarnge" parent="." instance=ExtResource("18_y41ly")]
-position = Vector2(737, 790)
+position = Vector2(736, 771)
 scale = Vector2(2.5, 2.5)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.462
 autostart = true
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Rock n Roll All Night" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("19_yxrc1")
 volume_db = -15.0
 autoplay = true
+
+[node name="MissedNote" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_f84uj")
+volume_db = 15.0
 
 [node name="Score" type="Label" parent="."]
 anchors_preset = 6
@@ -173,11 +178,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -40.0
-offset_top = -11.5
-offset_bottom = 11.5
+offset_left = 921.0
+offset_top = 605.0
+offset_right = 1016.0
+offset_bottom = 642.0
 grow_horizontal = 0
 grow_vertical = 2
+theme_override_font_sizes/font_size = 27
 script = ExtResource("20_kbm27")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_pressed"]
