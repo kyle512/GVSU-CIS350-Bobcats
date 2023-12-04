@@ -27,8 +27,8 @@
 script = ExtResource("1_78oe1")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(558, 556)
-scale = Vector2(1.06389, 0.785185)
+position = Vector2(573.375, 423.5)
+scale = Vector2(1.07708, 0.786111)
 texture = ExtResource("1_d50vf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -179,20 +179,20 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 886.0
-offset_top = 738.0
-offset_right = 986.0
-offset_bottom = 775.0
+offset_left = 900.0
+offset_top = 615.0
+offset_right = 1000.0
+offset_bottom = 652.0
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 27
 script = ExtResource("20_kbm27")
 
 [node name="Streak" type="Label" parent="."]
-offset_left = 886.0
-offset_top = 783.0
-offset_right = 985.0
-offset_bottom = 819.0
+offset_left = 864.0
+offset_top = 652.0
+offset_right = 963.0
+offset_bottom = 688.0
 script = ExtResource("22_piwp0")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_pressed"]

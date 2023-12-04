@@ -33,6 +33,7 @@ func _enter_tree():
 	endRepeat()
 	await get_tree().create_timer(3.6).timeout
 	greenNote()
+	redNote()
 	
 	await get_tree().create_timer(0.08).timeout
 	repeat()
@@ -58,17 +59,20 @@ func _enter_tree():
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
+	redNote()
 	
 	
 	await get_tree().create_timer(1.3).timeout
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
+	redNote()
 	
 	await get_tree().create_timer(12.2).timeout
 	endRepeat()
 	await get_tree().create_timer(3.6).timeout
 	greenNote()
+	redNote()
 	
 	await get_tree().create_timer(0.08).timeout
 	repeat()
@@ -81,6 +85,7 @@ func _enter_tree():
 	endRepeat()
 	await get_tree().create_timer(3.6).timeout
 	greenNote()
+	redNote()
 	
 	await get_tree().create_timer(0.12).timeout
 	repeat()
@@ -107,12 +112,13 @@ func _enter_tree():
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
+	redNote()
 	
 	await get_tree().create_timer(1.3).timeout
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
-	##
+	redNote()
 	
 	await get_tree().create_timer(13).timeout
 	greenNote()
@@ -122,33 +128,19 @@ func _enter_tree():
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
-	
+	redNote()
 	
 	await get_tree().create_timer(1.3).timeout
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
+	redNote()
 	
-	await get_tree().create_timer(12.5).timeout
-	endRepeat()
-	await get_tree().create_timer(3.6).timeout
-	greenNote()
-	
-	await get_tree().create_timer(0.08).timeout
-	repeat()
-	await get_tree().create_timer(3.25).timeout
-	repeat()
-	
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(1.3).timeout
 	afterRepeat()
-	await get_tree().create_timer(4.3).timeout
-	endRepeat()
-	await get_tree().create_timer(3.6).timeout
+	await get_tree().create_timer(5.3).timeout
 	greenNote()
-	
-
-	
-
+	redNote()
 	
 	
 #intro which is used a couple times
