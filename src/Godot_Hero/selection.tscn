@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://qqgbix8tac70"]
 
 [ext_resource type="Script" path="res://selection.gd" id="1_hkhgm"]
-[ext_resource type="Texture2D" uid="uid://b6dbl13thjwus" path="res://Images/SongSelectionBack.png" id="2_1dhaa"]
+[ext_resource type="Texture2D" uid="uid://cdewperxx6gtm" path="res://Images/SelectionBackground.png" id="2_akx7y"]
 [ext_resource type="AudioStream" uid="uid://bixnjgir8bdxg" path="res://Audio/spotifydown.com - Rock And Roll All Nite Sample.mp3" id="4_da0dc"]
 [ext_resource type="AudioStream" uid="uid://ddfa0ouj0gwbp" path="res://Audio/spotifydown.com - Even Flow Sample.mp3" id="5_43ryy"]
 [ext_resource type="AudioStream" uid="uid://b6ao2divbmbdv" path="res://Audio/spotifydown.com - Take Me Out Sample.mp3" id="6_0efxr"]
@@ -11,32 +11,32 @@ scale = Vector2(0.998178, 1.00007)
 script = ExtResource("1_hkhgm")
 
 [node name="selectionBack" type="Sprite2D" parent="."]
-position = Vector2(577.051, 423.97)
-scale = Vector2(1.06861, 0.78513)
-texture = ExtResource("2_1dhaa")
+position = Vector2(578.053, 425.97)
+scale = Vector2(1.15611, 0.85194)
+texture = ExtResource("2_akx7y")
 
 [node name="rockAndRollAllNite" type="Button" parent="."]
-offset_left = 593.081
-offset_top = 127.991
-offset_right = 1021.08
-offset_bottom = 212.991
+offset_left = 635.157
+offset_top = 45.9968
+offset_right = 1063.16
+offset_bottom = 130.997
 scale = Vector2(0.99912, 1)
 text = "Rock and Roll All Nite
 Kiss - Dressed to Kill - 1975"
 
 [node name="evenFlow" type="Button" parent="."]
-offset_left = 593.081
-offset_top = 279.98
-offset_right = 1023.08
-offset_bottom = 369.98
+offset_left = 635.157
+offset_top = 161.989
+offset_right = 1065.16
+offset_bottom = 251.989
 text = "Even Flow
 Pearl Jam - Ten - 1991"
 
 [node name="takeMeOut" type="Button" parent="."]
-offset_left = 593.081
-offset_top = 439.969
-offset_right = 1023.08
-offset_bottom = 532.969
+offset_left = 635.157
+offset_top = 291.98
+offset_right = 1065.16
+offset_bottom = 384.98
 text = "Take Me Out
 Franz Ferdinand - Franz Ferdinand - 2004"
 
@@ -56,10 +56,10 @@ stream = ExtResource("6_0efxr")
 volume_db = -10.0
 
 [node name="back" type="Button" parent="."]
-offset_left = 38.0
-offset_top = 46.0
-offset_right = 241.0
-offset_bottom = 137.0
+offset_left = 395.721
+offset_top = 775.946
+offset_right = 707.721
+offset_bottom = 823.946
 theme_override_font_sizes/font_size = 29
 text = "BACK"
 
