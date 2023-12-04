@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cbvym3dbtqnn8"]
+[gd_scene load_steps=23 format=3 uid="uid://cbvym3dbtqnn8"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_78oe1"]
 [ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="1_d50vf"]
@@ -21,12 +21,13 @@
 [ext_resource type="AudioStream" uid="uid://cmnht1g0eqtks" path="res://spotifydown.com - Rock And Roll All Nite.mp3" id="19_yxrc1"]
 [ext_resource type="Script" path="res://Score.gd" id="20_kbm27"]
 [ext_resource type="AudioStream" uid="uid://c642pkfbsivk1" path="res://Audio/Missed note sound effect.mp3" id="21_f84uj"]
+[ext_resource type="Script" path="res://Streak.gd" id="22_piwp0"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_78oe1")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(575.5, 424)
+position = Vector2(558, 556)
 scale = Vector2(1.06389, 0.785185)
 texture = ExtResource("1_d50vf")
 
@@ -140,23 +141,23 @@ position = Vector2(664, -32)
 position = Vector2(736, -32)
 
 [node name="Idle_Green" parent="." instance=ExtResource("13_vi0g5")]
-position = Vector2(448, 775)
+position = Vector2(448, 768)
 scale = Vector2(2.5, 2.5)
 
 [node name="Idle_Red" parent="." instance=ExtResource("15_b1tyj")]
-position = Vector2(520, 775)
+position = Vector2(520, 768)
 scale = Vector2(2.5, 2.5)
 
 [node name="Idle_Blue" parent="." instance=ExtResource("16_jxgi6")]
-position = Vector2(592, 775)
+position = Vector2(592, 768)
 scale = Vector2(2.5, 2.5)
 
 [node name="Idle_Yellow" parent="." instance=ExtResource("17_b2obg")]
-position = Vector2(664, 775)
+position = Vector2(664, 768)
 scale = Vector2(2.5, 2.5)
 
 [node name="Idle_Oarnge" parent="." instance=ExtResource("18_y41ly")]
-position = Vector2(736, 775)
+position = Vector2(736, 768)
 scale = Vector2(2.5, 2.5)
 
 [node name="Timer" type="Timer" parent="."]
@@ -178,14 +179,21 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 921.0
-offset_top = 605.0
-offset_right = 1016.0
-offset_bottom = 642.0
+offset_left = 886.0
+offset_top = 738.0
+offset_right = 986.0
+offset_bottom = 775.0
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 27
 script = ExtResource("20_kbm27")
+
+[node name="Streak" type="Label" parent="."]
+offset_left = 886.0
+offset_top = 783.0
+offset_right = 985.0
+offset_bottom = 819.0
+script = ExtResource("22_piwp0")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

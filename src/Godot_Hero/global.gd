@@ -16,3 +16,6 @@ var but_press_O = 0
 var note_speed = 100
 
 var score = 1000
+
+var streak = 0
+var mult = 1
