@@ -136,12 +136,6 @@ func _enter_tree():
 	greenNote()
 	redNote()
 	#last repeats of song
-	await get_tree().create_timer(1.5).timeout
-	afterRepeat()
-	await get_tree().create_timer(5.3).timeout
-	greenNote()
-	redNote()
-	#last repeats of song
 	await get_tree().create_timer(1.3).timeout
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
@@ -153,6 +147,17 @@ func _enter_tree():
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
 	redNote()
+	#last repeats of song
+	await get_tree().create_timer(1.3).timeout
+	afterRepeat()
+	await get_tree().create_timer(5.3).timeout
+	greenNote()
+	redNote()
+	#finished screen
+	await get_tree().create_timer(10).timeout
+	get_tree().change_scene_to_file("res://game_finished.tscn")
+	
+	
 	
 	
 #much repeated part

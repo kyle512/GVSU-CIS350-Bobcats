@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://ygxdw3yky08n"]
+
+[ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="1_4804m"]
+[ext_resource type="Script" path="res://game_finished.gd" id="1_un8pi"]
+[ext_resource type="Script" path="res://Score.gd" id="2_taqit"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wmfkm"]
+font_size = 55
+
+[node name="gameFinished" type="Node2D"]
+script = ExtResource("1_un8pi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(579, 424)
+scale = Vector2(1.06852, 0.786111)
+texture = ExtResource("1_4804m")
+
+[node name="score" type="Label" parent="."]
+offset_left = 263.0
+offset_right = 575.0
+offset_bottom = 133.0
+label_settings = SubResource("LabelSettings_wmfkm")
+script = ExtResource("2_taqit")
+
+[node name="menu" type="Button" parent="."]
+offset_left = 824.0
+offset_top = 489.0
+offset_right = 1041.0
+offset_bottom = 701.0
+text = "
+
+
+MENU"
+flat = true
+
+[node name="selection" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 497.0
+offset_right = 353.0
+offset_bottom = 687.0
+rotation = -0.0313718
+text = "
+
+
+
+           SELECTION SCREEN"
+flat = true
+
+[connection signal="pressed" from="menu" to="." method="menu"]
+[connection signal="pressed" from="selection" to="." method="selection"]
