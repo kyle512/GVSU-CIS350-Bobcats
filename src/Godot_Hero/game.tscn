@@ -115,15 +115,6 @@ texture_normal = ExtResource("6_uim7d")
 stretch_mode = 0
 script = ExtResource("11_2lgga")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 13.0
-offset_top = 771.0
-offset_right = 364.0
-offset_bottom = 840.0
-text = "Use \"Y, U, I, O, P\" keys to press the 
-green, red, blue, yellow, and orange, notes"
-fit_content = true
-
 [node name="Spawn" type="Node2D" parent="."]
 
 [node name="Marker2D_Green" type="Marker2D" parent="Spawn"]
