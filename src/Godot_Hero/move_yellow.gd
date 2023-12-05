@@ -25,8 +25,8 @@ func _process(delta):
 				if Input.is_action_just_pressed("Space"):
 					Global.miss_note += 1
 					Global.streak = 0
-
-
+					
+				
 func _on_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	sensor = 1
 
