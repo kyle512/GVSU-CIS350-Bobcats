@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://selection.gd" id="1_hkhgm"]
 [ext_resource type="Texture2D" uid="uid://cdewperxx6gtm" path="res://Images/SelectionBackground.png" id="2_akx7y"]
-[ext_resource type="AudioStream" uid="uid://cm6e17m8qkuq7" path="res://Audio/spotifydown.com - Rock And Roll All Nite Sample.mp3" id="4_da0dc"]
-[ext_resource type="AudioStream" uid="uid://dgk33euo7n6h1" path="res://Audio/spotifydown.com - Even Flow Sample.mp3" id="5_43ryy"]
-[ext_resource type="AudioStream" uid="uid://b6yxqcm0urkbe" path="res://Audio/spotifydown.com - Take Me Out Sample.mp3" id="6_0efxr"]
+[ext_resource type="AudioStream" uid="uid://bixnjgir8bdxg" path="res://Audio/spotifydown.com - Rock And Roll All Nite Sample.mp3" id="4_da0dc"]
+[ext_resource type="AudioStream" uid="uid://ddfa0ouj0gwbp" path="res://Audio/spotifydown.com - Even Flow Sample.mp3" id="5_43ryy"]
+[ext_resource type="AudioStream" uid="uid://b6ao2divbmbdv" path="res://Audio/spotifydown.com - Take Me Out Sample.mp3" id="6_0efxr"]
 
 [node name="selection" type="Node2D"]
 scale = Vector2(0.998178, 1.00007)
@@ -30,7 +30,8 @@ offset_top = 161.989
 offset_right = 1065.16
 offset_bottom = 251.989
 text = "Even Flow
-Pearl Jam - Ten - 1991"
+Pearl Jam - Ten - 1991
+(coming soon)"
 
 [node name="takeMeOut" type="Button" parent="."]
 offset_left = 635.157
@@ -38,7 +39,9 @@ offset_top = 291.98
 offset_right = 1065.16
 offset_bottom = 384.98
 text = "Take Me Out
-Franz Ferdinand - Franz Ferdinand - 2004"
+Franz Ferdinand - Franz Ferdinand - 2004
+(coming soon)
+"
 
 [node name="rockAndRollAllNiteAudio" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(805.468, 134.991)
@@ -68,8 +71,6 @@ text = "BACK"
 [connection signal="pressed" from="rockAndRollAllNite" to="." method="_on_rock_all_night_pressed"]
 [connection signal="mouse_entered" from="evenFlow" to="." method="_on_even_flow_mouse_entered"]
 [connection signal="mouse_exited" from="evenFlow" to="." method="_on_even_flow_mouse_exited"]
-[connection signal="pressed" from="evenFlow" to="." method="_on_even_flow_pressed"]
 [connection signal="mouse_entered" from="takeMeOut" to="." method="_on_take_me_out_mouse_entered"]
 [connection signal="mouse_exited" from="takeMeOut" to="." method="_on_take_me_out_mouse_exited"]
-[connection signal="pressed" from="takeMeOut" to="." method="_on_take_me_out_pressed"]
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
