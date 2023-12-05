@@ -15,7 +15,20 @@ var but_press_O = 0
 
 var note_speed = 100
 
-var score = 1000
-
+var score = 0
+var miss_note = 0
 var streak = 0
 var mult = 1
+
+func _process(delta):
+	
+	if miss_note == 15:
+		miss_note = 0
+		#Go to lose screen
+	
+	if streak == 0:
+		mult = 1
+	if streak == 10:
+		mult = 3
+	if streak == 20:
+		mult = 5

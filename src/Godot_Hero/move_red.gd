@@ -7,9 +7,9 @@ var sensor = 0
 func _process(delta):
 	position.y += Global.note_speed * delta
 	
-	if position.y > 960:
+	if position.y > 900:
 		queue_free()
-		Global.score -= 50
+		Global.miss_note += 1
 		Global.streak = 0
 		
 	if sensor == 1:
@@ -17,13 +17,14 @@ func _process(delta):
 			if Global.but_press_R == 1:
 				if Input.is_action_just_pressed("Space"):
 					queue_free()
-					Global.score += 100
+					Global.score += 5 * Global.mult
 					Global.streak += 1
+					Global.miss_note -= 2
 	elif sensor == 0:
 		if Global.sensor_R == 0:
 			if Global.but_press_R == 1:
 				if Input.is_action_just_pressed("Space"):
-					Global.score -= 50
+					Global.miss_note += 1
 					Global.streak = 0
 
 

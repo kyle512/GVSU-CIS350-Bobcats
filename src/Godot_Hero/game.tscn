@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cbvym3dbtqnn8"]
+[gd_scene load_steps=24 format=3 uid="uid://cbvym3dbtqnn8"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_78oe1"]
 [ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="1_d50vf"]
@@ -22,6 +22,7 @@
 [ext_resource type="Script" path="res://Score.gd" id="20_kbm27"]
 [ext_resource type="AudioStream" uid="uid://c642pkfbsivk1" path="res://Audio/Missed note sound effect.mp3" id="21_f84uj"]
 [ext_resource type="Script" path="res://Streak.gd" id="22_piwp0"]
+[ext_resource type="Script" path="res://Mult.gd" id="23_ralcd"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_78oe1")
@@ -194,6 +195,13 @@ offset_top = 652.0
 offset_right = 963.0
 offset_bottom = 688.0
 script = ExtResource("22_piwp0")
+
+[node name="Mult" type="Label" parent="."]
+offset_left = 832.0
+offset_top = 616.0
+offset_right = 872.0
+offset_bottom = 639.0
+script = ExtResource("23_ralcd")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
