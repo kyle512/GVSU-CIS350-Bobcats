@@ -22,9 +22,12 @@ var mult = 1
 
 func _process(delta):
 	
-	if miss_note == 15:
+	if miss_note > 10:
+		get_tree().change_scene_to_file("res://losing.tscn")
 		miss_note = 0
-		#Go to lose screen
+		score = 0
+		mult = 1
+		streak = 0
 	
 	if streak == 0:
 		mult = 1
