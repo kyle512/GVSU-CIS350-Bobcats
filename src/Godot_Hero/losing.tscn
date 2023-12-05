@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://ba6hmjgso36tt"]
+[gd_scene load_steps=4 format=3 uid="uid://r4wh8xdmge4l"]
 
 [ext_resource type="Script" path="res://game_finished.gd" id="1_sre42"]
 [ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="2_ivg8f"]
@@ -31,6 +31,7 @@ offset_top = 497.0
 offset_right = 353.0
 offset_bottom = 687.0
 rotation = -0.0313718
+scale = Vector2(0.978637, 1.01486)
 text = "
 
 

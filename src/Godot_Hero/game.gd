@@ -16,6 +16,10 @@ func _process(delta):
 func _enter_tree():
 	#Speed of song
 	Global.note_speed = 192
+	Global.score = 0
+	Global.miss_note = 0
+	Global.streak = 0
+	Global.mult = 1
 	#intro
 	greenNote()
 	await get_tree().create_timer(0.55).timeout
@@ -116,11 +120,11 @@ func _enter_tree():
 	await get_tree().create_timer(1.65).timeout
 	greenNote()
 	orangeNote()
-	await get_tree().create_timer(4.7).timeout
+	await get_tree().create_timer(4.9).timeout
 	greenNote()
 	redNote()
 	#2nd repeat
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(2.2).timeout
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
