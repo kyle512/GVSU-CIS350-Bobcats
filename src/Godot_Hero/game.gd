@@ -120,11 +120,11 @@ func _enter_tree():
 	await get_tree().create_timer(1.65).timeout
 	greenNote()
 	orangeNote()
-	await get_tree().create_timer(4.7).timeout
+	await get_tree().create_timer(4.9).timeout
 	greenNote()
 	redNote()
 	#2nd repeat
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(2.2).timeout
 	afterRepeat()
 	await get_tree().create_timer(5.3).timeout
 	greenNote()
