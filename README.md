@@ -15,4 +15,4 @@ of the fret board. Rock on!
 
 ## Run Instructions
 
-download [this](Godot Hero.exe) file and run it
+Play the game [Here](https://kyle512.itch.io/godot-hero)
