@@ -24,16 +24,16 @@ text = "BACK"
 [node name="Button2" type="Button" parent="."]
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
-offset_left = 270.0
+offset_left = 316.0
 offset_top = 287.0
-offset_right = 837.0
+offset_right = 852.0
 offset_bottom = 680.0
 
 [node name="Label" type="Label" parent="."]
-offset_left = 317.0
-offset_top = 312.0
-offset_right = 892.0
-offset_bottom = 660.0
+offset_left = 382.0
+offset_top = 305.0
+offset_right = 837.0
+offset_bottom = 653.0
 text = "Green Note:            Y
 Red Note:                U 
 Blue Note:                I
