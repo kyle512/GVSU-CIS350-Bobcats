@@ -22,7 +22,7 @@ var mult = 1
 
 func _process(delta):
 	
-	if miss_note > 10:
+	if miss_note > 15:
 		get_tree().change_scene_to_file("res://losing.tscn")
 		miss_note = 0
 		score = 0

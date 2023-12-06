@@ -18,7 +18,8 @@ func _process(delta):
 					queue_free()
 					Global.score += 5 * Global.mult
 					Global.streak += 1
-					Global.miss_note -= 2
+					if(Global.miss_note):
+						Global.miss_note -= 2
 	elif sensor == 0:
 		if Global.sensor_Y == 0:
 			if Global.but_press_Y == 1:
