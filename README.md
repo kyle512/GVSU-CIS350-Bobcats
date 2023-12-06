@@ -14,3 +14,5 @@ of the fret board. Rock on!
 ## Prerequisites
 
 ## Run Instructions
+
+download [this](Godot Hero.exe) file and run it
