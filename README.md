@@ -17,4 +17,4 @@ A working computer with 117 mb of storage or the ability to open a web page
 
 ## Run Instructions
 
-Play the game [Here](https://kyle512.itch.io/godot-hero) or download [Here](https://kyle512.itch.io/godot-hero-exe)
+Play the game on itch.io [Here](https://kyle512.itch.io/godot-hero) or download [Here](https://kyle512.itch.io/godot-hero-exe)
