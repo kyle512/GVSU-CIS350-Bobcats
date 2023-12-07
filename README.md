@@ -1,6 +1,6 @@
 # Bobcats
 
-Godot Hero, a guitar game based off the popular game Guitar Hero. Pick from a selection of songs to play along with while trying to accurately hit every note. 
+Godot Hero, a guitar game based off the popular game Guitar Hero created using Godot 4. Pick from a selection of songs to play along with while trying to accurately hit every note. 
 Use the "Y U I O P" keys as the green, red, blue, yellow, and orange notes. Use the space bar to strum the notes as they pass by the large circle notes on the bottom 
 of the fret board. Rock on!
 
@@ -13,6 +13,8 @@ of the fret board. Rock on!
 
 ## Prerequisites
 
+A working computer with 117 mb of storage or the ability to open a web page
+
 ## Run Instructions
 
-download [this](Godot Hero.exe) file and run it
+Play the game on itch.io [Here](https://kyle512.itch.io/godot-hero) or download [Here](https://kyle512.itch.io/godot-hero-exe)
