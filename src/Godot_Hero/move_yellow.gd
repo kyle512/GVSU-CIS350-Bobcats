@@ -18,15 +18,16 @@ func _process(delta):
 					queue_free()
 					Global.score += 5 * Global.mult
 					Global.streak += 1
-					Global.miss_note -= 2
+					if(Global.miss_note):
+						Global.miss_note -= 2
 	elif sensor == 0:
 		if Global.sensor_Y == 0:
 			if Global.but_press_Y == 1:
 				if Input.is_action_just_pressed("Space"):
 					Global.miss_note += 1
 					Global.streak = 0
-
-
+					
+				
 func _on_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	sensor = 1
 
