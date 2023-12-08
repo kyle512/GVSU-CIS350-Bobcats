@@ -22,7 +22,7 @@ Discussion points:
 
     PyGame lessons videos and articles along with the PyGame documents
 
-* First task/Mileston:
+* First task/Milestone:
 
     Build the graphical interface with notes on the screen
 

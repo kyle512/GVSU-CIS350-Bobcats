@@ -20,7 +20,7 @@ Discussion points:
 
 * Decide final tasks to work on
 
-    The final tasks we want to have finished before we present are the entire rock and roll night with notes, including a scoring feature and an animation for hit notes. We also hope to have an end screen at the end of the song as well as possible having sound for missed notes.
+    The final tasks we want to have finished before we present are the entire rock and roll all night with notes, including a scoring feature and an animation for hit notes. We also hope to have an end screen at the end of the song as well as possible having sound for missed notes.
     
 Goals for next week //
 
