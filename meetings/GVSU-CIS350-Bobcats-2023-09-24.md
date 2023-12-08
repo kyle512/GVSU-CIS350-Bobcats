@@ -14,13 +14,13 @@ Discussion points:
 
     Had everyone install visual studio code and set it up for working on the project.
 
-* setting up github and getting everyone connected to remote
+* Setting up github and getting everyone connected to remote
 
     Made sure everyone could use git properly from the terminal and had it setup correctly for the project.
 
 * Setting up python and installing pygame
 
-    Made sure everyone had python installed and could use python inside visual studio code. Trouble shooted problems with installing pygame which included adding python to the path in enviromental variables.
+    Made sure everyone had python installed and could use python inside visual studio code. Troubleshot problems with installing pygame which included adding python to the path in enviromental variables.
 
 Goals for next week 
 
@@ -28,4 +28,4 @@ Goals for next week
 
 * Finish setting up everything for the project (everyone)
 
-* Research on pygame and start playing arond with the pygame functions (everyone)
+* Research on pygame and start playing around with the pygame functions (everyone)

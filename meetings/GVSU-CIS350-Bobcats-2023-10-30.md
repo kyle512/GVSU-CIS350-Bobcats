@@ -12,7 +12,7 @@ Discussion points:
 
 * Implementation to show for homework
 
-    Discussed what tasks we could work on to show implemented for homework. Decided that the two tasks we would focus on were the button functions at the bottom of the fret board and having in game music. We also discussed the start of animating notes and creating a more visually appealing game.
+    Discussed what tasks we could work on to show implemented for homework. Decided that the two tasks we would focus on were the button functions at the bottom of the fret board and having in-game music. We also discussed the start of animating notes and creating a more visually appealing game.
 
 * How to go about different tasks
 
@@ -28,4 +28,4 @@ Goals for next week //
 
 * Have music working in game
 
-* Create more visually appealling game 
+* Create more visually appealing game 

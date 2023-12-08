@@ -12,7 +12,7 @@ Discussion points:
 
 * Progress check for worked on tasks
 
-    Discuessed what each of us had accomplished with the previous tasks we had been working on as well as providing reccomnedations for each part being worked on. Made sure everyone was doing ok with the tasks they were working on were going to be able to accomplish what they needed to.
+    Discussed what each of us had accomplished with the previous tasks we had been working on as well as providing reccomendations for each part being worked on. Made sure everyone was doing ok with the tasks they were working on and were going to be able to accomplish what they needed to.
 
 * Suggestions for project
 

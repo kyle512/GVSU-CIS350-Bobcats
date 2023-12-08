@@ -18,12 +18,11 @@ Discussion points:
 * Splitting up hw3
 
     Made a game plan for hw3 and how we can split up the group part of the homework. Everyone is going to do their individual section
-    then we can come together to make the srs based off our individual sections. Then We will split up the use case diagrams and use case description among us. 
+    then we can come together to make the srs based off our individual sections. Then we will split up the use case diagrams and use case description among us. 
 
 * Midterm presentation
 
-    Talked about what we wanted to have done for the presentation and what we could showcase for our progress. Talked about what we could use
-    to create diagrams. 
+    Talked about what we wanted to have done for the presentation and what we could showcase for our progress. Talked about what we could use to create diagrams. 
 
 Goals for next week //
 

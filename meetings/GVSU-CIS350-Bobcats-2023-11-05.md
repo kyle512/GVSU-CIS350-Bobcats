@@ -12,11 +12,11 @@ Discussion points:
 
 * Discuss what tasks need to be worked on
 
-    Decided that we should create an animation for when a user correctly hits the note so they know whethe they hit or missed a note. Decided that there should be sound when a button is pressed as well as when the user strums for a note and misses it. We also need to work on creating the notes to go down the screen that is synchronized with the song. Finally there needs to be polishing on the previous game implementation.
+    Decided that we should create an animation for when a user correctly hits the note so they know when they hit or missed a note. Decided that there should be sound when a button is pressed as well as when the user strums for a note and misses it. We also need to work on creating the notes to go down the screen that is synchronized with the song. Finally there needs to be polishing on the previous game implementation.
 
 * Assign roles within group
 
-    Parker is going to work on polishing his previous work with the game implementation animating the notes and checking for note accuracy. Jack is going to continue working with soudns and adding in the sounds we talked about. James is going to work on the animation for when a note is accruactely hit by the user. Kyle is going to work on synchronizing the notes down the screen with the song. 
+    Parker is going to work on polishing his previous work with the game implementation animating the notes and checking for note accuracy. Jack is going to continue working with sounds and adding in the sounds we talked about. James is going to work on the animation for when a note is accurately hit by the user. Kyle is going to work on synchronizing the notes down the screen with the song. 
 
 * Review work done in the previous week
 
