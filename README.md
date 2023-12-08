@@ -18,4 +18,4 @@ A working computer with 117 mb of storage or the ability to open a web page
 ## Run Instructions
 
 Play the game on itch.io [Here](https://kyle512.itch.io/godot-hero) or download [Here](https://kyle512.itch.io/godot-hero-exe) <br>
-You can also download Godot 4 [here](https://godotengine.org/), cloan our repository and open the src folder inside Godot and run it
+You can also download [Godot 4](https://godotengine.org/), cloan our repository and open the src folder inside Godot and run it
