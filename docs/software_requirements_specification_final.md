@@ -6,31 +6,31 @@
 ### <Menu Screen>
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR1 | <Clicking the ‘Play’ button shall display a menu of available songs to play> |
-| FR2 | <Clicking the 'Controls' button shall display a control menu> |
-| FR3 | <Clicking the 'Quit' button shall exit the game> |
-| FR4 | <Clicking the 'Settings' button shall allow users to customize audio volume and visual effects> |
-| FR5 | <The main menu shall have background music playing> |
+| FR1 | Clicking the ‘Play’ button shall display a menu of available songs to play |
+| FR2 | Clicking the 'Controls' button shall display a control menu |
+| FR3 | Clicking the 'Quit' button shall exit the game |
+| FR4 | Clicking the 'Settings' button shall allow users to customize audio volume and visual effects |
+| FR5 | The main menu shall have background music playing |
 
 ### <Song Selection Screen>
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR6 | <Clicking a song shall change to the gameplay screen with the associated song> |
-| FR7 | <User shall be able to choose from a multiple songs to play> |
-| FR8 | <Songs shall have the name, the artist, and the year listed> |
-| FR9 | <Clicking the 'Back' button shall take the user back to the main menu> |
-| FR10 | <The songs shall play when the mouse is hovered over them> |
+| FR6 | Clicking a song shall change to the gameplay screen with the associated song |
+| FR7 | User shall be able to choose from a multiple songs to play |
+| FR8 | Songs shall have the name, the artist, and the year listed |
+| FR9 | Clicking the 'Back' button shall take the user back to the main menu |
+| FR10 | The songs shall play when the mouse is hovered over them |
 
 ### <GamePlay Screen>
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR11 | <The game shall have 5 different notes moving down the screen> |
-| FR12 | <Each note on the game screen shall be a different color> |
-| FR13 | <Points shall be awarded if a key input is read as the note crosses the end of the fret board> |
-| FR14 | <When the player consecutively hits a series of correct notes. A multiplier shall be applied to their score> |
-| FR15 | <The amount of notes consecutivley hit shall be displayed on the screen> |
-| FR16 | <If the user misses a note the streak shall be set back to 0> |
-| FR17 | <The player shall be able to return to song selection screen from game screen> |
+| FR11 | The game shall have 5 different notes moving down the screen |
+| FR12 | Each note on the game screen shall be a different color |
+| FR13 | Points shall be awarded if a key input is read as the note crosses the end of the fret board |
+| FR14 | When the player consecutively hits a series of correct notes. A multiplier shall be applied to their score |
+| FR15 | The amount of notes consecutivley hit shall be displayed on the screen |
+| FR16 | If the user misses a note the streak shall be set back to 0 |
+| FR17 | The player shall be able to return to song selection screen from game screen |
 
 ## Non-Functional Requirements
 
