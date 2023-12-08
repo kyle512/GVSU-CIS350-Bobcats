@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba6hmjgso36tt"]
+
+[ext_resource type="Script" path="res://game_finished.gd" id="1_sre42"]
+[ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="2_ivg8f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k8yll"]
+font_size = 55
+
+[node name="losing" type="Node2D"]
+script = ExtResource("1_sre42")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(579, 424)
+scale = Vector2(1.06852, 0.786111)
+texture = ExtResource("2_ivg8f")
+
+[node name="menu" type="Button" parent="."]
+offset_left = 824.0
+offset_top = 489.0
+offset_right = 1041.0
+offset_bottom = 701.0
+text = "
+
+
+MENU"
+flat = true
+
+[node name="selection" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 497.0
+offset_right = 353.0
+offset_bottom = 687.0
+rotation = -0.0313718
+scale = Vector2(0.978637, 1.01486)
+text = "
+
+
+
+           SELECTION SCREEN"
+flat = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 292.0
+offset_top = 17.0
+offset_right = 557.0
+offset_bottom = 96.0
+text = "YOU LOST"
+label_settings = SubResource("LabelSettings_k8yll")
+
+[connection signal="pressed" from="menu" to="." method="menu" flags=18]
+[connection signal="pressed" from="selection" to="." method="selection" flags=18]

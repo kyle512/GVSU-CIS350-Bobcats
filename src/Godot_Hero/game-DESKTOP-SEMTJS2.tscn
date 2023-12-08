@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://cbvym3dbtqnn8"]
+[gd_scene load_steps=46 format=3 uid="uid://cbvym3dbtqnn8"]
 
+[ext_resource type="Script" path="res://game.gd" id="1_78oe1"]
 [ext_resource type="Texture2D" uid="uid://ltrfb2j7ned5" path="res://Images/epicBackground.png" id="1_d50vf"]
 [ext_resource type="Texture2D" uid="uid://brpeogie4qrdt" path="res://Images/fretBoard.png" id="1_rfijf"]
 [ext_resource type="Texture2D" uid="uid://dp87kqc5d3vm" path="res://Images/red_unpressed.png" id="2_f7or2"]
@@ -12,12 +13,355 @@
 [ext_resource type="Script" path="res://BlueButton.gd" id="7_cgoe4"]
 [ext_resource type="Script" path="res://YellowButton.gd" id="9_0lpwv"]
 [ext_resource type="Script" path="res://OrangeButton.gd" id="11_2lgga"]
+[ext_resource type="PackedScene" uid="uid://4j0708tnwto1" path="res://idle_green.tscn" id="13_vi0g5"]
+[ext_resource type="PackedScene" uid="uid://c4vl1qds1tibp" path="res://idle_red.tscn" id="15_b1tyj"]
+[ext_resource type="Texture2D" uid="uid://cdtdn0ugv2voi" path="res://Images/Flame.png" id="15_hltd4"]
+[ext_resource type="PackedScene" uid="uid://b65gs5ixwobg3" path="res://idle_blue.tscn" id="16_jxgi6"]
+[ext_resource type="Texture2D" uid="uid://dud4xwv8lmb48" path="res://Images/WrongNote.png" id="16_rou2l"]
+[ext_resource type="PackedScene" uid="uid://difawji7wghkg" path="res://idle_yellow.tscn" id="17_b2obg"]
+[ext_resource type="PackedScene" uid="uid://v6rc8vfriiqe" path="res://idle_oarnge.tscn" id="18_y41ly"]
+[ext_resource type="AudioStream" uid="uid://cmnht1g0eqtks" path="res://spotifydown.com - Rock And Roll All Nite.mp3" id="19_yxrc1"]
+[ext_resource type="Script" path="res://Score.gd" id="20_kbm27"]
+[ext_resource type="AudioStream" uid="uid://c642pkfbsivk1" path="res://Audio/Missed note sound effect.mp3" id="21_f84uj"]
+[ext_resource type="Script" path="res://Streak.gd" id="22_piwp0"]
+[ext_resource type="Script" path="res://Mult.gd" id="23_ralcd"]
+
+[sub_resource type="Animation" id="Animation_v21m5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("badGreen:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("goodGreen:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bdp3p"]
+resource_name = "badGreen"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("badGreen:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4bigx"]
+resource_name = "goodGreen"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodGreen:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_twkrt"]
+_data = {
+"RESET": SubResource("Animation_v21m5"),
+"badGreen": SubResource("Animation_bdp3p"),
+"goodGreen": SubResource("Animation_4bigx")
+}
+
+[sub_resource type="Animation" id="Animation_pfspg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodRed:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("badRed:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_u64v2"]
+resource_name = "badRed"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("badRed:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_tp6s4"]
+resource_name = "goodRed"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodRed:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3ngi4"]
+_data = {
+"RESET": SubResource("Animation_pfspg"),
+"badRed": SubResource("Animation_u64v2"),
+"goodRed": SubResource("Animation_tp6s4")
+}
+
+[sub_resource type="Animation" id="Animation_ok8q6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodBlue:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("badBlue:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_txnqj"]
+resource_name = "badBlue"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("badBlue:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4hubc"]
+resource_name = "goodBlue"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodBlue:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a7vu5"]
+_data = {
+"RESET": SubResource("Animation_ok8q6"),
+"badBlue": SubResource("Animation_txnqj"),
+"goodBlue": SubResource("Animation_4hubc")
+}
+
+[sub_resource type="Animation" id="Animation_p4yoe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodYellow:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("badYellow:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ksknw"]
+resource_name = "badYellow"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("badYellow:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_kyriw"]
+resource_name = "goodYellow"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodYellow:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oralm"]
+_data = {
+"RESET": SubResource("Animation_p4yoe"),
+"badYellow": SubResource("Animation_ksknw"),
+"goodYellow": SubResource("Animation_kyriw")
+}
+
+[sub_resource type="Animation" id="Animation_fcdok"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodOrange:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("badOrange:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_phay0"]
+resource_name = "badOrange"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("badOrange:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_qtejk"]
+resource_name = "goodOrange"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("goodOrange:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ott7s"]
+_data = {
+"RESET": SubResource("Animation_fcdok"),
+"badOrange": SubResource("Animation_phay0"),
+"goodOrange": SubResource("Animation_qtejk")
+}
 
 [node name="game" type="Node2D"]
+script = ExtResource("1_78oe1")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(575.5, 424)
-scale = Vector2(1.06389, 0.785185)
+position = Vector2(573.375, 423.5)
+scale = Vector2(1.07708, 0.786111)
 texture = ExtResource("1_d50vf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -27,13 +371,24 @@ position = Vector2(591, 424)
 scale = Vector2(5.84375, 7.0467)
 texture = ExtResource("1_rfijf")
 
+[node name="BackButton" type="Button" parent="."]
+offset_left = 87.0
+offset_top = 506.0
+offset_right = 349.0
+offset_bottom = 690.0
+text = "
+
+	           
+               BACK TO SONGS"
+flat = true
+
 [node name="GreenButton" type="TextureButton" parent="."]
 self_modulate = Color(1, 1, 1, 0.901961)
 texture_filter = 1
-offset_left = 398.0
-offset_top = 742.0
-offset_right = 497.0
-offset_bottom = 848.0
+offset_left = 400.0
+offset_top = 744.0
+offset_right = 499.0
+offset_bottom = 850.0
 action_mode = 0
 button_mask = 0
 texture_normal = ExtResource("2_ymspd")
@@ -92,11 +447,173 @@ texture_normal = ExtResource("6_uim7d")
 stretch_mode = 0
 script = ExtResource("11_2lgga")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 13.0
-offset_top = 771.0
-offset_right = 364.0
-offset_bottom = 840.0
-text = "Use \"Y, U, I, O, P\" keys to press the 
-green, red, blue, yellow, and orange, notes"
-fit_content = true
+[node name="Spawn" type="Node2D" parent="."]
+
+[node name="Marker2D_Green" type="Marker2D" parent="Spawn"]
+position = Vector2(448, -32)
+
+[node name="Marker2D_Red" type="Marker2D" parent="Spawn"]
+position = Vector2(520, -32)
+
+[node name="Marker2D_Blue" type="Marker2D" parent="Spawn"]
+position = Vector2(592, -32)
+
+[node name="Marker2D_Yellow" type="Marker2D" parent="Spawn"]
+position = Vector2(664, -32)
+
+[node name="Marker2D_Orange" type="Marker2D" parent="Spawn"]
+position = Vector2(736, -32)
+
+[node name="Idle_Green" parent="." instance=ExtResource("13_vi0g5")]
+position = Vector2(448, 768)
+scale = Vector2(2.5, 2.5)
+
+[node name="goodGreen" type="Sprite2D" parent="Idle_Green"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0.332305, 7.87463)
+scale = Vector2(0.0362336, 0.0372884)
+texture = ExtResource("15_hltd4")
+
+[node name="badGreen" type="Sprite2D" parent="Idle_Green"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 9.59375)
+scale = Vector2(0.00321147, 0.00321147)
+texture = ExtResource("16_rou2l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Idle_Green"]
+libraries = {
+"": SubResource("AnimationLibrary_twkrt")
+}
+
+[node name="Idle_Red" parent="." instance=ExtResource("15_b1tyj")]
+position = Vector2(520, 768)
+scale = Vector2(2.5, 2.5)
+
+[node name="goodRed" type="Sprite2D" parent="Idle_Red"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 8.29313)
+scale = Vector2(0.0406126, 0.0386974)
+texture = ExtResource("15_hltd4")
+
+[node name="badRed" type="Sprite2D" parent="Idle_Red"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 9.59375)
+scale = Vector2(0.00377893, 0.00377893)
+texture = ExtResource("16_rou2l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Idle_Red"]
+libraries = {
+"": SubResource("AnimationLibrary_3ngi4")
+}
+
+[node name="Idle_Blue" parent="." instance=ExtResource("16_jxgi6")]
+position = Vector2(592, 768)
+scale = Vector2(2.5, 2.5)
+
+[node name="goodBlue" type="Sprite2D" parent="Idle_Blue"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 7.93478)
+scale = Vector2(-0.0386222, -0.0394099)
+texture = ExtResource("15_hltd4")
+flip_h = true
+flip_v = true
+
+[node name="badBlue" type="Sprite2D" parent="Idle_Blue"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 9.59375)
+scale = Vector2(-0.00314351, -0.00314351)
+texture = ExtResource("16_rou2l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Idle_Blue"]
+libraries = {
+"": SubResource("AnimationLibrary_a7vu5")
+}
+
+[node name="Idle_Yellow" parent="." instance=ExtResource("17_b2obg")]
+position = Vector2(664, 768)
+scale = Vector2(2.5, 2.5)
+
+[node name="goodYellow" type="Sprite2D" parent="Idle_Yellow"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 8.76786)
+scale = Vector2(0.039198, 0.0402958)
+texture = ExtResource("15_hltd4")
+
+[node name="badYellow" type="Sprite2D" parent="Idle_Yellow"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 9.59375)
+scale = Vector2(0.00331805, 0.00331805)
+texture = ExtResource("16_rou2l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Idle_Yellow"]
+libraries = {
+"": SubResource("AnimationLibrary_oralm")
+}
+
+[node name="Idle_Oarnge" parent="." instance=ExtResource("18_y41ly")]
+position = Vector2(736, 768)
+scale = Vector2(2.5, 2.5)
+
+[node name="goodOrange" type="Sprite2D" parent="Idle_Oarnge"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 8.37705)
+scale = Vector2(-0.0429463, -0.040899)
+texture = ExtResource("15_hltd4")
+flip_h = true
+flip_v = true
+
+[node name="badOrange" type="Sprite2D" parent="Idle_Oarnge"]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(0, 9.59375)
+scale = Vector2(0.00343716, 0.00343716)
+texture = ExtResource("16_rou2l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Idle_Oarnge"]
+libraries = {
+"": SubResource("AnimationLibrary_ott7s")
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.462
+autostart = true
+
+[node name="Rock n Roll All Night" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_yxrc1")
+volume_db = -15.0
+autoplay = true
+
+[node name="MissedNote" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_f84uj")
+volume_db = 15.0
+
+[node name="Score" type="Label" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 900.0
+offset_top = 615.0
+offset_right = 1000.0
+offset_bottom = 652.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 27
+script = ExtResource("20_kbm27")
+
+[node name="Streak" type="Label" parent="."]
+offset_left = 864.0
+offset_top = 652.0
+offset_right = 963.0
+offset_bottom = 688.0
+script = ExtResource("22_piwp0")
+
+[node name="Mult" type="Label" parent="."]
+offset_left = 832.0
+offset_top = 616.0
+offset_right = 872.0
+offset_bottom = 639.0
+script = ExtResource("23_ralcd")
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
