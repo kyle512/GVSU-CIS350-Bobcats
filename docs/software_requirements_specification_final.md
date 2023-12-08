@@ -60,3 +60,8 @@ The purpose of this document is to outline the functional and non-functional req
 | NFR13 | The controls shall be easy to understand for all users |
 | NFR14 | The game should have little to no audio latency for a better user experience |
 | NFR15 | The notes shall move down the screen at a good speed |
+
+# Software Artifacts
+Links to the various graphs and diagrams used throughout our project
+
+* [Gameplay use case diagram](https://github.com/kylewscott/GVSU-CIS350-Bobcats/blob/master/artifacts/use_case_diagrams/Gameplay_UseCase.pdf)
