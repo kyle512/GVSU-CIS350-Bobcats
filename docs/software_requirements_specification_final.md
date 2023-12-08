@@ -68,3 +68,6 @@ Links to the various graphs and diagrams used throughout our project
 * [Song Selection use case diagram](https://github.com/kylewscott/GVSU-CIS350-Bobcats/blob/master/artifacts/use_case_diagrams/Song_selection_use_case.drawio.pdf)
 * [Main Menu use case diagram](https://github.com/kylewscott/GVSU-CIS350-Bobcats/blob/master/artifacts/use_case_diagrams/UseCase1.2.drawio.pdf)
 * [Song Selection use case description](https://github.com/kylewscott/GVSU-CIS350-Bobcats/blob/master/artifacts/use_case_diagrams/use_case_description_songSelection.md)
+* [Midterm Burndown Chart](https://github.com/kylewscott/GVSU-CIS350-Bobcats/blob/master/artifacts/Midterm_Burndown.PNG)
+* [Final Burndown CHart](https://github.com/kylewscott/GVSU-CIS350-Bobcats/blob/master/artifacts/Final_Burndown.PNG)
+
