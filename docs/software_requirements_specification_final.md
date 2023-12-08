@@ -1,5 +1,5 @@
 # Software Requirements
-<Describe the structure of this section>
+The purpose of this document is to outline the functional and non-functional requirements for our term project
 
 ## Functional Requirements
 
