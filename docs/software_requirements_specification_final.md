@@ -3,7 +3,7 @@
 
 ## Functional Requirements
 
-### <Menu Screen>
+### Menu Screen
 | ID | Requirement |
 | :-------------: | :----------: |
 | FR1 | Clicking the ‘Play’ button shall display a menu of available songs to play |
@@ -12,7 +12,7 @@
 | FR4 | Clicking the 'Settings' button shall allow users to customize audio volume and visual effects |
 | FR5 | The main menu shall have background music playing |
 
-### <Song Selection Screen>
+### Song Selection Screen
 | ID | Requirement |
 | :-------------: | :----------: |
 | FR6 | Clicking a song shall change to the gameplay screen with the associated song |
@@ -21,7 +21,7 @@
 | FR9 | Clicking the 'Back' button shall take the user back to the main menu |
 | FR10 | The songs shall play when the mouse is hovered over them |
 
-### <GamePlay Screen>
+### GamePlay Screen
 | ID | Requirement |
 | :-------------: | :----------: |
 | FR11 | The game shall have 5 different notes moving down the screen |
@@ -34,29 +34,29 @@
 
 ## Non-Functional Requirements
 
-### <Menu Screen>
+### Menu Screen
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 | <The background of every screen shall change depending on what menu the user is in> |
-| NFR2 | <The main menu shall provide clear feedback visually or audibly> |
-| NFR3 | <The main menu shall be intuitive and user friendly> |
-| NFR4 | <The main menu shall load within 5 seconds of the game starting> |
-| NFR5 | <> |
+| NFR1 | The background of every screen shall change depending on what menu the user is in |
+| NFR2 | The main menu shall provide clear feedback visually or audibly |
+| NFR3 | The main menu shall be intuitive and user friendly |
+| NFR4 | The main menu shall load within 5 seconds of the game starting |
+| NFR5 | The main menu shall be easily exited |
 
-### <Song Selection Screen>
+### Song Selection Screen
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR6 | <The system shall load in the selected song quickly> |
-| NFR7 | <The system shall be able to add new songs into the game easily> |
-| NFR8 | <All song names shall be displayed in an easy to read format for the player to see> |
-| NFR9 | <The game shall have a wide variety of songs> |
-| NFR10 | <> |
+| NFR6 | The system shall load in the selected song quickly |
+| NFR7 | The system shall be able to add new songs into the game easily |
+| NFR8 | All song names shall be displayed in an easy to read format for the player to see |
+| NFR9 | The game shall have the capacity to store a wide variety of songs |
+| NFR10 | The selection screen shall have an easy to navigate user interface |
 
-### <GamePlay Screen>
+### GamePlay Screen
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR11 | <The game and its inputs shall play the same on any OS> |
-| NFR12 | <Notes on the fret board shall line up according to the beat of the current song> |
-| NFR13 | <The controls shall be easy to understand for all users> |
-| NFR14 | <The game should have little to no audio latency for a better user experience> |
-| NFR15 | <The notes shall move down the screen at a good speed> |
+| NFR11 | The game and its inputs shall play the same on any OS |
+| NFR12 | Notes on the fret board shall line up according to the beat of the current song |
+| NFR13 | The controls shall be easy to understand for all users |
+| NFR14 | The game should have little to no audio latency for a better user experience |
+| NFR15 | The notes shall move down the screen at a good speed |
